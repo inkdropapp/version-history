@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run build:json && npm run build:readme",
+    "build:readme": "node index.js",
     "build:json": "js-yaml history.yml > history.json",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "npm run build:json"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "inkdrop"
