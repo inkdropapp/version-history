@@ -1,0 +1,23 @@
+{
+  "name": "inkdrop-version-history",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:json": "js-yaml history.yml > history.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build:json"
+  },
+  "keywords": [
+    "inkdrop"
+  ],
+  "author": "Takuya Matsuyama <t@inkdrop.info>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "prettier": "1.10.2",
+    "js-yaml": "^3.10.0"
+  }
+}
