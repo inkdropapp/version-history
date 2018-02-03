@@ -13,7 +13,6 @@
 * **Improvement**: Don't save the window state if it's fullscreen/maximized (Thanks, [Otawara-san](https://forum.inkdrop.info/t/windows/287))
 * **Bugfix**: Syntax highlighting for PHP won't work (Thanks, [Nick](https://forum.inkdrop.info/t/php-highlighting-doesn-t-work-is-it-only-me-or/301) and [Kagaya-san](https://forum.inkdrop.info/t/php/266))
 * **Bugfix**: Avoid duplicate keybinding for cmd-u & ctrl-u (Thanks, [Otawara-san](https://forum.inkdrop.info/t/ctrl-u/283/4))
-* **Bugfix**: Avoid duplicate keybinding for cmd-u & ctrl-u (Thanks, Otawara-san)
 
 ## v3.17.4
 
