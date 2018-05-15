@@ -1,5 +1,31 @@
 # Inkdrop Release Notes
 
+## v3.20.1
+2018-04-15
+
+* **improvement**: Change the label for removing note from 'Delete' to 'Move to Trash' (Thanks [Dan](https://forum.inkdrop.info/t/add-a-confirmation-prompt-when-deleting-notes/457))
+* **improvement**: Exporting with preview theme styling (Thanks [audiosyncrasy](https://forum.inkdrop.info/t/pdf-export-with-preview-theme-styling/489))
+* **improvement**: Allow rendering `<mark>` tag (Thanks [Hoopy](https://forum.inkdrop.info/t/plugin-dev-extending-markdown-syntax/427))
+
+## v3.20.0
+2018-04-03
+
+* **bugfix**: Fixed a problem where the sync requests always time out after 10 seconds. It sometimes causes to fail synchronization when you have a lot of notes and images to sync at once (Thanks [Hoopy](https://forum.inkdrop.info/t/recommended-setup-for-own-sync-server/374/13))
+* **bugfix**: Use 20 characters for indexing notes with title (Thanks chocolat)
+* **bugfix**: Handle `mailto:` links properly (Thanks [Samantha](https://forum.inkdrop.info/t/how-to-make-mailto-links-work/409))
+* **improvement**: Add logout and sync menu (Thanks [Al and Bob](https://forum.inkdrop.info/t/how-to-logout-switch-accounts/401/3))
+* **improvement**: Stop checking update once it found new version on Linux (Thanks [Luis, Parker and Al](https://forum.inkdrop.info/t/how-can-i-disable-the-update-popup/388/4))
+* **improvement**: Select all text on focus on the search bar (Thanks [Jesse and Robert](https://forum.inkdrop.info/t/feature-refinement-remove-search-context-from-ui-for-regular-searches-use-tagname-for-tag-filters/357))
+
+## v3.19.0
+2018-03-22
+
+* **improvement**: Add print shortcut for windows and linux (Thanks Otawara-san)
+* **improvement**: Show native traffic light window buttons on macOS (Thanks [Dan](https://forum.inkdrop.info/t/macos-traffic-light-window-buttons-dont-behave-as-expected/340))
+* **improvement**: Better keychain error message
+* **improvement**: New config for sync: `core.db.sync.options` (Thanks [Hoopy](https://forum.inkdrop.info/t/recommended-setup-for-own-sync-server/375))
+* **bugfix**: Ignore case for title sort (Thanks [Florian](https://forum.inkdrop.info/t/inkdrop-should-ignore-case-when-ordering-note-lists-by-title/385))
+
 ## v3.18.0
 2018-02-01
 
