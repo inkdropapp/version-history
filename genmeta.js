@@ -32,8 +32,13 @@ try {
     }
   }
 
+  try {
+    fs.mkdirSync('./output')
+  } catch (e) {}
+
   const data = yaml.safeDump(meta, { lineWidth: 1000 })
-  fs.writeFileSync('./meta.yaml', data)
+  fs.writeFileSync('./output/meta.yaml', data)
+  fs.writeFileSync('./output/LATEST', 'v' + version)
   console.log(
     `Successfully generated a meta file for version ${version} to ./meta.yaml`
   )

@@ -7,6 +7,7 @@
     "build": "npm run build:json && npm run build:readme",
     "build:readme": "node index.js",
     "build:json": "js-yaml history.yml > history.json",
+    "release": "env $(cat .env | xargs) node release.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "npm run build"
   },
