@@ -1,5 +1,16 @@
 # Inkdrop Release Notes
 
+## v3.20.2
+2018-07-21
+
+* **bugfix**: Version dialog not shown on Windows or Linux (Thanks Sceptic)
+* **bugfix**: The app won't quit immediately in some case (Thanks Sceptic)
+* **bugfix**: Plugin keybindings not shown correctly on the preference screen (Thanks [Samantha](https://forum.inkdrop.info/t/enable-codefold/407/24))
+* **bugfix**: Prohibit deleting default notebook (Thanks Sceptic)
+* **bugfix**: Avoid overwriting notes with same title and date time when exporting (Thanks Sceptic)
+* **bugfix**: Hide editor search box when toggling preview (Thanks [Vianney](https://forum.inkdrop.info/t/search-tool-breaks-the-notes-header/473))
+* **bugfix**: Allow file:// protocol for images (Thanks [Sceptic](https://forum.inkdrop.info/t/pdf-links-break-the-window-its-openend-in/593/2))
+
 ## v3.20.1
 2018-04-15
 
