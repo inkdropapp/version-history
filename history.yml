@@ -1,4 +1,10 @@
 -
+  version: 3.21.0
+  pub_date: 2018-06-13T00:00:00.000Z
+  notes: |
+    * **New feature**: Task progress view
+    * **Bugfix**: The default remote db url is incorrectly shown
+-
   version: 3.20.2
   pub_date: 2018-07-21T00:00:00.000Z
   notes: |

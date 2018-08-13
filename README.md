@@ -1,5 +1,11 @@
 # Inkdrop Release Notes
 
+## v3.21.0
+2018-06-13
+
+* **New feature**: Task progress view
+* **Bugfix**: The default remote db url is incorrectly shown
+
 ## v3.20.2
 2018-07-21
 
