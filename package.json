@@ -1,6 +1,6 @@
 {
   "name": "inkdrop-version-history",
-  "version": "3.20.2",
+  "version": "3.21.0",
   "description": "The version history of Inkdrop for desktop",
   "main": "index.js",
   "scripts": {
