@@ -1,4 +1,13 @@
 -
+  version: 3.22.0
+  pub_date: 2018-08-25T00:00:00.000Z
+  notes: |
+    * **New feature**: Remember window maximized and fullscreen state
+    * **New feature**: Support inline HTML
+    * **New feature**: Support restoring old note revisions (Thanks Hoopy and others)
+    * **Improvement**: Avoid overwriting old rev with new rev when conflicted. Make a copy of the old version
+    * **Bugfix**: Fix unexpectedly rendering preview endlessly
+-
   version: 3.21.0
   pub_date: 2018-08-13T00:00:00.000Z
   notes: |

@@ -1,5 +1,14 @@
 # Inkdrop Release Notes
 
+## v3.22.0
+2018-08-25
+
+* **New feature**: Remember window maximized and fullscreen state
+* **New feature**: Support inline HTML
+* **New feature**: Support restoring old note revisions (Thanks Hoopy and others)
+* **Improvement**: Avoid overwriting old rev with new rev when conflicted. Make a copy of the old version
+* **Bugfix**: Fix unexpectedly rendering preview endlessly
+
 ## v3.21.0
 2018-08-13
 
