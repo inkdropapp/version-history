@@ -1,4 +1,10 @@
 -
+  version: 3.22.1
+  pub_date: 2018-09-21T00:00:00.000Z
+  notes: |
+    * **Bugfix**: Unexpected note conflicts happen randomly (Thanks [Parker, Hoopy, Meo-san and Otawara-san](https://forum.inkdrop.info/t/conflicted-notes/651))
+    * **Bugfix**: Cursor position randomly moves to the note head while typing fast (Thanks [Otawara-san](https://forum.inkdrop.info/t/topic/673))
+-
   version: 3.22.0
   pub_date: 2018-08-25T00:00:00.000Z
   notes: |

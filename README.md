@@ -1,5 +1,11 @@
 # Inkdrop Release Notes
 
+## v3.22.1
+2018-09-21
+
+* **Bugfix**: Unexpected note conflicts happen randomly (Thanks [Parker, Hoopy, Meo-san and Otawara-san](https://forum.inkdrop.info/t/conflicted-notes/651))
+* **Bugfix**: Cursor position randomly moves to the note head while typing fast (Thanks [Otawara-san](https://forum.inkdrop.info/t/topic/673))
+
 ## v3.22.0
 2018-08-25
 
