@@ -1,4 +1,11 @@
 -
+  version: 3.22.2
+  pub_date: 2018-09-30T00:00:00.000Z
+  notes: |
+    * **Bugfix**: (Windows) Can't toggle checkboxes on preview (Thanks, Enokiya-san)
+    * **Bugfix**: (Windows) Inline HTML does not work (Thanks, Kato-san)
+    * **Bugfix**: Table align does not work (Thanks, [ZeroThe2nd](https://forum.inkdrop.info/t/table-in-the-shared-note-does-not-respect-cell-alignments/138/5))
+-
   version: 3.22.1
   pub_date: 2018-09-21T00:00:00.000Z
   notes: |
