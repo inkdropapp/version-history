@@ -1,4 +1,9 @@
 -
+  version: 3.22.3
+  pub_date: 2018-10-09T00:00:00.000Z
+  notes: |
+    * **Improvement**: Change timeout for auto-save from 1 min to 5 secs.
+-
   version: 3.22.2
   pub_date: 2018-09-30T00:00:00.000Z
   notes: |

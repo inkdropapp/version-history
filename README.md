@@ -1,5 +1,10 @@
 # Inkdrop Release Notes
 
+## v3.22.3
+2018-10-09
+
+* **Improvement**: Change timeout for auto-save from 1 min to 5 secs.
+
 ## v3.22.2
 2018-09-30
 
