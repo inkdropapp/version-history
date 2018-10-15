@@ -1,5 +1,11 @@
 # Inkdrop Release Notes
 
+## v3.22.4
+2018-10-15
+
+* **Improvement**: (Windows) Avoid duplicate save action for the same revision
+* **Bugfix**: Small bugfixes on internal processing
+
 ## v3.22.3
 2018-10-09
 

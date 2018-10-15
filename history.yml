@@ -1,4 +1,10 @@
 -
+  version: 3.22.4
+  pub_date: 2018-10-15T00:00:00.000Z
+  notes: |
+    * **Improvement**: (Windows) Avoid duplicate save action for the same revision
+    * **Bugfix**: Small bugfixes on internal processing
+-
   version: 3.22.3
   pub_date: 2018-10-09T00:00:00.000Z
   notes: |
