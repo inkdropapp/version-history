@@ -1,5 +1,10 @@
 # Inkdrop Release Notes
 
+## v3.23.1
+2018-11-09
+
+* **Bugfix**: Cursor jumps backward after typing the first letter (Thanks artigas and Lauren)
+
 ## v3.23.0
 2018-11-09
 
