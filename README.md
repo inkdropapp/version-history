@@ -1,5 +1,21 @@
 # Inkdrop Release Notes
 
+## v3.23.0
+2018-11-09
+
+* **Improvement**: Clear text selections in preview on note open (Thanks Otawara-san)
+* **Improvement**: Show confirm dialog for restoring backup (Thanks Nojiri-san)
+* **Improvement**: Add editor commands for changing note status (Thanks Hiroga-san)
+  * `editor:change-note-status-none`
+  * `editor:change-note-status-active`
+  * `editor:change-note-status-onhold`
+  * `editor:change-note-status-completed`
+  * `editor:change-note-status-dropped`
+* **Improvement**: Disable auto-save while composing CJK (Thanks Obi-san and Otawara-san)
+* **Improvement**: Preserve cursor positions when synced editing note
+* **Bugfix**: Image widgets unloaded when note updated via sync
+* **Bugfix**: Inline HTML breaks the app (Thanks David M., David A., T.Y, et al.)
+
 ## v3.22.4
 2018-10-15
 
