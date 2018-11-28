@@ -1,5 +1,12 @@
 # Inkdrop Release Notes
 
+## v3.23.2
+2018-11-28
+
+* **Improvement**: Auto-save when blurred the active window
+* **Bugfix**: Markdown parser doesn't behave correctly and it causes some plugins like TOC won't work
+* **Bugfix**: Table align doesn't work
+
 ## v3.23.1
 2018-11-09
 
