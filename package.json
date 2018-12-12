@@ -4,10 +4,11 @@
   "description": "The version history of Inkdrop for desktop",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:json && npm run build:readme && npm run build:meta",
+    "build": "npm run build:json && npm run build:readme && npm run build:meta && npm run build:changelog",
     "build:readme": "node index.js",
     "build:json": "js-yaml history.yml > history.json",
     "build:meta": "node genmeta.js",
+    "build:changelog": "node changelog.js",
     "release": "env $(cat .env | xargs) node release.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "npm run build"
@@ -15,7 +16,7 @@
   "keywords": [
     "inkdrop"
   ],
-  "author": "Takuya Matsuyama <t@inkdrop.info>",
+  "author": "Takuya Matsuyama <t@inkdrop.app>",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^4.15.0",
