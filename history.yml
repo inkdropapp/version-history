@@ -1,4 +1,11 @@
 -
+  version: 3.24.0
+  pub_date: 2018-12-25T00:00:00.000Z
+  notes: |
+    * **Improvement**: Add some CSS for print-out (Thanks Ikeda-san)
+    * **Improvement**: Use Segoe UI font for Windows
+    * **Bugfix**: Limit batch size of replications (Thanks Shimba-san)
+-
   version: 3.23.2
   pub_date: 2018-11-28T00:00:00.000Z
   notes: |

@@ -1,5 +1,12 @@
 # Inkdrop Release Notes
 
+## v3.24.0
+2018-12-25
+
+* **Improvement**: Add some CSS for print-out (Thanks Ikeda-san)
+* **Improvement**: Use Segoe UI font for Windows
+* **Bugfix**: Limit batch size of replications (Thanks Shimba-san)
+
 ## v3.23.2
 2018-11-28
 
