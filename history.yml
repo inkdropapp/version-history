@@ -1,4 +1,9 @@
 -
+  version: 3.25.1
+  pub_date: 2019-01-11T00:00:00.000Z
+  notes: |
+    * **Bugfix**: The app incorrectly checks the beta version
+-
   version: 3.25.0
   pub_date: 2019-01-11T00:00:00.000Z
   notes: |

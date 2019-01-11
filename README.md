@@ -1,5 +1,10 @@
 # Inkdrop Release Notes
 
+## v3.25.1
+2019-01-11
+
+* **Bugfix**: The app incorrectly checks the beta version
+
 ## v3.25.0
 2019-01-11
 
