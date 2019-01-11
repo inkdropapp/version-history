@@ -1,5 +1,14 @@
 # Inkdrop Release Notes
 
+## v3.25.0
+2019-01-11
+
+* **New feature**: Support jump-to-line in editor (Thanks Otawara-san)
+* **Improvement**: Update electron@3
+* **Improvement**: Fix menu item rendering problem on Ubuntu (Thanks [andi](https://forum.inkdrop.app/t/menu-item-rendering-problem-on-ubuntu-18-04/556/))
+* **Improvement**: Fix vibrant dark UI theme issue (Thanks [Caleb](https://forum.inkdrop.app/t/vibrant-dark-ui-rendering-issue/187))
+* **Chore**: Prepare for beta program
+
 ## v3.24.0
 2018-12-25
 
