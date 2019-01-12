@@ -1,5 +1,11 @@
 # Inkdrop Release Notes
 
+## v3.25.2
+2019-01-12
+
+* **Bugfix**: Fix a bug where the app fails to initialize database
+  * It avoids happening the error: "Failed to load database: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function"
+
 ## v3.25.1
 2019-01-11
 
