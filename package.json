@@ -3,6 +3,10 @@
   "version": "3.25.3",
   "description": "The version history of Inkdrop for desktop",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkdropapp/version-history.git"
+  },
   "scripts": {
     "build": "npm run build:json && npm run build:readme && npm run build:meta && npm run build:changelog",
     "build:readme": "node index.js",

@@ -11,7 +11,6 @@
       network:
         strict_ssl: 0
   ```
-
 * **Bugfix**: Proxy settings won't work properly (Thanks Nobumi-san)
 * **Bugfix**: Exporting PDF file does not work (Thanks Atsuo-san)
 
