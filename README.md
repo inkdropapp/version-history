@@ -1,5 +1,20 @@
 # Inkdrop Release Notes
 
+## v3.25.3
+2019-01-21
+
+* **New Feature**: Add a context-menu for copying and saving image on Markdown preview (Thanks kyubuns-san and Otawara-san)
+* **Improvement**: Support disabling the validation of self-signed certs by adding `strict_ssl: 0` in your `config.cson` like so:
+  ```
+  "*":
+    core:
+      network:
+        strict_ssl: 0
+  ```
+
+* **Bugfix**: Proxy settings won't work properly (Thanks Nobumi-san)
+* **Bugfix**: Exporting PDF file does not work (Thanks Atsuo-san)
+
 ## v3.25.2
 2019-01-12
 
