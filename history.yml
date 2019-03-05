@@ -1,4 +1,12 @@
 -
+  version: 3.25.4
+  pub_date: 2019-03-05T00:00:00.000Z
+  notes: |
+    * **Improvement**: Update Electron to 3.1.4
+    * **Bugfix**: Avoid SSL problem with proxy enabled (Thanks Takahiro-san and Yan)
+    * **Bugfix**: Windows app randomly not shutting down correctly (Thanks Sceptic, Samantha, and Otawara-san)
+    * **Bugfix**: Prevent from removing selection out of search input when note opened (Thanks Yoshioka-san)
+-
   version: 3.25.3
   pub_date: 2019-01-21T00:00:00.000Z
   notes: |

@@ -1,5 +1,13 @@
 # Inkdrop Release Notes
 
+## v3.25.4
+2019-03-05
+
+* **Improvement**: Update Electron to 3.1.4
+* **Bugfix**: Avoid SSL problem with proxy enabled (Thanks Takahiro-san and Yan)
+* **Bugfix**: Windows app randomly not shutting down correctly (Thanks Sceptic, Samantha, and Otawara-san)
+* **Bugfix**: Prevent from removing selection out of search input when note opened (Thanks Yoshioka-san)
+
 ## v3.25.3
 2019-01-21
 
