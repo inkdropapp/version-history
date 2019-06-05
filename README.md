@@ -1,5 +1,54 @@
 # Inkdrop Release Notes
 
+## v4.0.0
+2019-06-05
+
+Please read [this blog post](https://blog.inkdrop.info/introducing-inkdrop-4-9d0c63de16d2) to take a quick look at this release!
+
+* **New feature**: Support configuring global keymaps to focus the app window (Thanks [Gustavo](https://forum.inkdrop.app/t/hotkey-to-open-show-inkdrop/1262))
+* **New feature**: Support inkdrop:// app scheme (macOS) and argv (Windows & Linux) to open a note from external apps
+* **New feature**: Hide main window instead of closing it (Thanks [Gustavo](https://forum.inkdrop.app/t/app-takes-a-while-to-open-up-on-macos-after-cmd-w/822))
+* **New feature**: Support inline image widgets for HTML img tags
+* **New feature**: End-to-end encryption
+* **New feature**: New search UI
+* **New feature**: Notebook submenus
+* **New feature**: Count badges
+* **New feature**: Smart scroll sync for side-by-side mode
+* **Improvement**: Support filtering by tag (Thanks Horii-san)
+* **Improvement**: Remember sidebar visibility (Thanks Horii-san)
+* **Improvement**: Add left margin to count badge (Thanks [leptospira489](https://forum.inkdrop.app/t/thinner-scrollbar-on-windows-and-linux))
+* **Improvement**: New logo
+* **Improvement**: Change scrollbar width and color for Windows and Linux (Thanks [leptospira489](https://forum.inkdrop.app/t/thinner-scrollbar-on-windows-and-linux))
+* **Improvement**: Change sidebar indent width slightly (Thanks Enokiya-san)
+* **Improvement**: `ipm` command uses the client API key for the desktop app instead of requiring to generate an API key
+* **Improvement**: Improve sync to be more stable
+* **Improvement**: Way smoother smart scroll sync
+* **Improvement**: Quicker smart scroll sync
+* **Improvement**: Better performance for full-text search
+* **Improvement**: Support embedding attachment images with HTML tags (Thanks [Erdem](https://forum.inkdrop.app/t/images-in-html-tag/1096))
+* **Bugfix**: JS compile cache not working
+* **Bugfix**: SVG files cannot be inserted (Thanks [John](https://forum.inkdrop.app/t/cannot-insert-svg-images/1271))
+* **Bugfix**: Plugin won't be loaded correctly due to babel error (Thanks [folks involved on this issue](https://github.com/libeanim/inkdrop-admonition/issues/1))
+* **Bugfix**: `devMode` won't work (Thanks Otawara-san)
+* **Bugfix**: The app crashes when the note list scrolls after resizing the window (Thanks Horii-san)
+* **Bugfix**: Preferences window crashes when opened a plugin detail
+* **Bugfix**: Parse invalid search queries without errors
+* **Bugfix**: Clear find state in the editor when search keyword not set (Thanks [Erdem](https://forum.inkdrop.app/t/previous-search-history/1126/7?u=craftzdog))
+* **Bugfix**: Notebook picker on the editor not working (Thanks Otawara-san)
+* **Bugfix**: Cannot empty the trash (Thanks [Erdem](https://forum.inkdrop.app/t/cannot-empty-the-trash/1189))
+* **Bugfix**: Show a proper error message on incompatible plugins
+* **Bugfix**: `ctrl-y` to redo in the editor not working on Windows and Linux (Thanks Otawara-san)
+* **Bugfix**: Dbl-clicking urls to open on the editor not working (Thanks Otawara-san)
+* **Bugfix**: Props for HTML `img` tag like `width` not working (Thanks [Kazutaka-san](https://forum.inkdrop.app/t/resizing-images-by-using-html-tag/1167/))
+* **Bugfix**: Search keyword not being highlighted until you open a different note (Thanks [Erdem](https://forum.inkdrop.app/t/previous-search-history/1126/3))
+* **Bugfix**: Can't toggle task list on preview
+* **Bugfix**: Smart scroll sync is unstable (Thanks Otawara-san)
+* **Bugfix**: Previous search text highlighting won't be cleared on the editor (Thanks [Erdem](https://forum.inkdrop.app/t/previous-search-history/1126))
+* **Bugfix**: Backspace won't work on tags input bar (Thanks [FORTRAN](https://forum.inkdrop.app/t/tag-removal-not-working/1134))
+* **Bugfix**: Can't remove notebooks and tags from sidebar
+* **Bugfix**: Exported PDF randomly skips inline image (Thanks [Asish](https://forum.inkdrop.app/t/exported-pdf-randomly-skips-inline-images/1070))
+* **Bugfix**: First bullet point has an additional newline (Thanks [derkork](https://forum.inkdrop.app/t/first-bullet-point-has-an-additional-newline/1068) and Kuroyanagi-san)
+
 ## v3.25.4
 2019-03-05
 
