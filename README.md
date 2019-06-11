@@ -1,5 +1,12 @@
 # Inkdrop Release Notes
 
+## v4.0.2
+2019-06-11
+
+* **Bugfix**: Show error message when it failed to load local database
+* **Bugfix**: Note tags are sometimes not properly migrated
+* **Bugfix**: Broken sync with Android (Thanks [Joshua and Kato-san](https://forum.inkdrop.app/t/android-sync-appears-broken/1324))
+
 ## v4.0.1
 2019-06-09
 
