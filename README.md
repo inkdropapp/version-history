@@ -1,7 +1,7 @@
 # Inkdrop Release Notes
 
 ## v4.2.0
-2019-06-20
+2019-07-08
 
 * **New feature**: Support adding status bar items from plugins (See [this example plugin](https://github.com/inkdropapp/layout-example-plugin))
 * **New feature**: Support `editor.indentUnit` config (Thanks [Ahmed](https://forum.inkdrop.app/t/change-indentation-size/1368))
