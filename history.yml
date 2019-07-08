@@ -1,4 +1,19 @@
 -
+  version: 4.2.0
+  pub_date: 2019-06-20T00:00:00.000Z
+  notes: |
+    * **New feature**: Support adding status bar items from plugins (See [this example plugin](https://github.com/inkdropapp/layout-example-plugin))
+    * **New feature**: Support `editor.indentUnit` config (Thanks [Ahmed](https://forum.inkdrop.app/t/change-indentation-size/1368))
+    * **New feature**: Add `core:note-list-show-all-notes` and `core:sidebar-focus` commands
+    * **Improvement**: Add `.htm` extension to dialog filters (Thanks [jiunhsien](https://forum.inkdrop.app/t/import-hypertext-markup-language-files-with-filename-end-in-htm/1380))
+    * **Improvement**: Humanize name of config settings of plugins in preferences
+    * **Improvement**: Handle right-clicked items as expected (Thanks [Otawara-san and Mike](https://forum.inkdrop.app/t/right-click-delete-behaviour-is-not-as-expected/1388))
+    * **Improvement**: Add some utility methods for [layout](https://docs.inkdrop.app/reference/layout-manager)
+    * **Bugfix**: Skip listing invisible notes(`Completed`, `Dropped` state) properly (Thanks [Keiji-san](https://forum.inkdrop.app/t/sort-order-affects-visibility-of-notes/1358))
+    * **Bugfix**: Retain view options when changing order/sort
+    * **Bugfix**: Autoupdate not working on macOS
+    * **Bugfix**: Update properly when a UI layout has been modified
+-
   version: 4.1.0
   pub_date: 2019-06-20T00:00:00.000Z
   notes: |
