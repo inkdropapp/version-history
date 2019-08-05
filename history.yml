@@ -17,6 +17,7 @@
     * Support highlighting tables in the editor
       * Before: ![before](https://github.com/inkdropapp/version-history-beta/blob/master/images/gfm-table-support_before.png?raw=true)
       * After: ![after](https://github.com/inkdropapp/version-history-beta/blob/master/images/gfm-table-support_after.png?raw=true)
+    * Support multiple languages in [spell-checker@2.0.0](https://my.inkdrop.app/plugins/spell-checker) plugin
     * Add [core:search-notes](https://docs.inkdrop.app/manual/list-of-commands#coresearch-notes) and [core:filter-notes](https://docs.inkdrop.app/manual/list-of-commands#corefilter-notes) commands
     * Support select all items on note list bar with `core:select-all` command
     * Support `enum` key in config schema for plugins. [See the doc for detail](https://docs.inkdrop.app/reference/config#enum).
