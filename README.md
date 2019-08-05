@@ -48,6 +48,7 @@ Enjoy Markdown note-taking 😃
 * Close window when it is in fullscreen (Thanks [Sammy](https://forum.inkdrop.app/t/app-crashing-when-quitting-while-fullscreen-on-mac/1329))
 * Add missing commands for changing note status
   * `editor:change-note-status-(none|active|onhold|completed|dropped)`
+* Disable image widgets in code (Thanks [Jacky](https://forum.inkdrop.app/t/inline-image-widgets-should-not-be-displayed-in-code-blocks/1370))
 
 ## v4.2.0
 2019-07-08
