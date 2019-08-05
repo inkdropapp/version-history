@@ -1,5 +1,12 @@
 # Inkdrop Release Notes
 
+## v4.3.1
+2019-08-06
+
+Some people are getting a blank screen after 4.3.0 update.
+This update should fix the problem.
+Please report if you still encounter the issue [here](https://forum.inkdrop.app/t/blank-app-after-4-3-0-update/1435).
+
 ## v4.3.0
 2019-08-05
 
