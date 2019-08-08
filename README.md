@@ -5,7 +5,7 @@
 
 ### New features
 * Changing default bullet for unordered lists
-  ![unordered-list-bullet](https://github.com/inkdropapp/version-history/blob/master/images/v4.3.2-unordered-list-bullet.png)
+  ![unordered-list-bullet](https://github.com/inkdropapp/version-history/blob/master/images/v4.3.2-unordered-list-bullet.png?raw=true)
 * Global hot key to toggle main window (Thanks [Jacques and Kanazawa-san](https://forum.inkdrop.app/t/hotkey-to-open-show-inkdrop/1262/))
 
 ### Improvement
