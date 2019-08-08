@@ -1,5 +1,20 @@
 # Inkdrop Release Notes
 
+## v4.3.2
+2019-08-08
+
+### New features
+* Changing default bullet for unordered lists
+  ![unordered-list-bullet](https://github.com/inkdropapp/version-history/blob/master/images/v4.3.2-unordered-list-bullet.png)
+* Global hot key to toggle main window (Thanks [Jacques and Kanazawa-san](https://forum.inkdrop.app/t/hotkey-to-open-show-inkdrop/1262/))
+
+### Improvement
+* Switch to editing mode automatically when created a new note (Thanks [Gustavo](https://forum.inkdrop.app/t/automatically-enable-editing-mode-when-create-note/1477))
+
+### Bugfixes
+* Inline image widgets sometimes not showing (Thanks Kato-san)
+* Toggling checkbox on preview pane not working (Thanks [Scott](https://forum.inkdrop.app/t/checklists-dont-work-after-update-4-3-0-4-3-1/1451))
+
 ## v4.3.1
 2019-08-06
 
