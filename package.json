@@ -1,6 +1,6 @@
 {
   "name": "inkdrop-version-history",
-  "version": "4.3.2",
+  "version": "4.3.3",
   "description": "The version history of Inkdrop for desktop",
   "main": "index.js",
   "repository": {
@@ -24,8 +24,8 @@
   "author": "Takuya Matsuyama <t@inkdrop.app>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^3.6.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
     "eslint-plugin-prettier": "^3.1.0",
     "js-yaml": "^3.13.1",
     "prettier": "^1.18.2"
