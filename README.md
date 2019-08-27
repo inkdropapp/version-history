@@ -1,5 +1,20 @@
 # Inkdrop Release Notes
 
+## v4.3.3
+2019-08-27
+
+### New feature
+* Clicking tags on sidebar while pressing cmd-key(macOS)/ctrl-key(Linux, Windows) to add a filter condition by them (Thanks [Daniel](https://forum.inkdrop.app/t/allow-filtering-by-multiple-tags/1501))
+
+### Improvement
+* Better performance for building full-text search index (Thanks Mori-san)
+
+### Bugfixes
+* Preview is jittery when side-by-side mode (Thanks [warcode](https://forum.inkdrop.app/t/mermaidjs-side-by-side-editing-jittery/1512))
+* Table editing support is not working on Linux (Thanks [Bastian](https://forum.inkdrop.app/t/improved-table-editing/101/14))
+* `word-wrap` is not enabled in codeblocks for printing (Thanks [Carlos](https://forum.inkdrop.app/t/exported-pdf-randomly-skips-inline-images/1070/8))
+* Scrolling to end of note list is jittery (Thanks [Tobias](https://forum.inkdrop.app/t/scrolling-to-end-of-note-list-is-jittery/1516))
+
 ## v4.3.2
 2019-08-08
 
