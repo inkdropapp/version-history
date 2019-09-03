@@ -1,5 +1,15 @@
 # Inkdrop Release Notes
 
+## v4.3.4
+2019-09-03
+
+### Improvement
+* Use relative paths for images in exported files (Thanks [Lennart](https://forum.inkdrop.app/t/export-to-md-should-use-relative-paths-to-attachments/1535))
+
+### Bugfixes
+* Importing html files not working (Thanks [Furukawa-san](https://forum.inkdrop.app/t/cannot-import-html-files/1531))
+* `ipm publish` not working (Thanks Otawara-san)
+
 ## v4.3.3
 2019-08-27
 
