@@ -1,6 +1,6 @@
 {
   "name": "inkdrop-version-history",
-  "version": "4.3.3",
+  "version": "4.3.4",
   "description": "The version history of Inkdrop for desktop",
   "main": "index.js",
   "repository": {
