@@ -1,4 +1,24 @@
 -
+  version: 4.4.0
+  pub_date: 2019-10-21T00:00:00.000Z
+  notes: |
+    ### New feature
+    * Importing markdown files (Thanks [q1701](https://github.com/q1701/inkdrop-import-markdown))
+
+    ### Improvement
+    * Bump up Electron from 3.1.4 to 6.0.11
+    * Bump up `ipm` from 2.1.6 to 2.4.3
+    * Better UI performance
+
+    ### Bugfixes
+    * Plugin configurations on prefrence window not working
+    * Pages from the second page are blank when exporting as PDF
+    * Some memory leaks in sync
+    * Opening next/prev note not working (Thanks Otawara-san)
+    * Revert changes regarding checkpointers of data sync which might have been causing that some notes won't be synced in some cases
+    * The scroll position is lost when toggling distraction free mode (Thanks [Bastian](https://forum.inkdrop.app/t/scroll-position-saved-across-sessions/1303/3))
+    * Notarize the app for macOS Catalina (Thanks [Kevin](https://forum.inkdrop.app/t/unable-to-open-in-macos/1617))
+-
   version: 4.3.4
   pub_date: 2019-09-03T00:00:00.000Z
   notes: |
