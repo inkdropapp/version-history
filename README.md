@@ -1,5 +1,16 @@
 # Inkdrop Release Notes
 
+## v4.4.1
+2019-12-06
+
+### Improvement
+* Automatically select the first item of tags in the editor (Thanks Evan)
+* Allow copying/saving an image widget on the editor (Thanks [Bastian](https://forum.inkdrop.app/t/save-as-option-for-images/1632))
+
+### Bugfixes
+* Keybindings for plugins not showing (Thanks Otawara-san)
+* Replace the dependency of DEB package on `libgnome-keyring0` with `gnome-keyring` (Thanks [Daniel](https://forum.inkdrop.app/t/provided-deb-package-does-not-work-on-ubuntu-19-10/1661))
+
 ## v4.4.0
 2019-10-21
 
