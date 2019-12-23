@@ -1,5 +1,22 @@
 # Inkdrop Release Notes
 
+## v4.5.0
+2019-12-23
+
+### New feature
+* Support showing a revision as diff in revision history  
+  ![Show as diff](https://github.com/inkdropapp/version-history/blob/master/images/v4.5.0-show-as-diff-in-revision-history.png?raw=true)
+
+### Improvement
+* `MessageDialog` supports `modalSettings` option (See [here](https://docs.inkdrop.app/reference/message-dialog) for more detail. Thanks [andi](https://forum.inkdrop.app/t/bug-in-messagedialog-dismissal-and-note-save-command/1696))
+* Larger disclosure button for book list items
+
+### Bugfixes
+* Pressing Enter key unexpectedly inserts a tag in the editor (Thanks Otawara-san)
+* Extra dots for trailing spaces unexpectedly showing (Thanks [chocolat](https://forum.inkdrop.app/t/extra-dots-for-space-characters-showing-when-show-invisible-characters-option-enabled/1691))
+* Sidebar book filter transition some times does not work as expected
+* Open URIs with unknown scheme in external (Thanks [James](https://forum.inkdrop.app/t/hook-app-links-seem-to-crash-hang-inkdrop/1699))
+
 ## v4.4.1
 2019-12-06
 
