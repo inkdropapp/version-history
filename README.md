@@ -1,5 +1,14 @@
 # Inkdrop Release Notes
 
+## v4.5.1
+2020-01-11
+
+### Bugfixes
+* Disclosure button makes the side menu item height taller on Windows (Thanks Otawara-san)
+* Double-clicking text opens external app unexpectedly (Thanks Otawara-san)
+* Avoid failing to build FTS index on processing invalid notes
+* Prevent opening new window by external `_blank` target links
+
 ## v4.5.0
 2019-12-23
 

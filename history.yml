@@ -1,4 +1,13 @@
 -
+  version: 4.5.1
+  pub_date: 2020-01-11T00:00:00.000Z
+  notes: |
+    ### Bugfixes
+    * Disclosure button makes the side menu item height taller on Windows (Thanks Otawara-san)
+    * Double-clicking text opens external app unexpectedly (Thanks Otawara-san)
+    * Avoid failing to build FTS index on processing invalid notes
+    * Prevent opening new window by external `_blank` target links
+-
   version: 4.5.0
   pub_date: 2019-12-23T00:00:00.000Z
   notes: |
