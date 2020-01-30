@@ -1,5 +1,15 @@
 # Inkdrop Release Notes
 
+## v4.5.2
+2020-01-30
+
+### Improvement
+* Note list performance
+* Do not remove documents which marked as deleted when restoring data from a backup
+
+### Bugfix
+* 'Restore' button not working on Backup preference due to updated Electron version (Thanks Nakatani-san)
+
 ## v4.5.1
 2020-01-11
 

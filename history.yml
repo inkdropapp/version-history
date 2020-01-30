@@ -1,4 +1,14 @@
 -
+  version: 4.5.2
+  pub_date: 2020-01-30T00:00:00.000Z
+  notes: |
+    ### Improvement
+    * Note list performance
+    * Do not remove documents which marked as deleted when restoring data from a backup
+
+    ### Bugfix
+    * 'Restore' button not working on Backup preference due to updated Electron version (Thanks Nakatani-san)
+-
   version: 4.5.1
   pub_date: 2020-01-11T00:00:00.000Z
   notes: |
