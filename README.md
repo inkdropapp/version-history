@@ -1,5 +1,38 @@
 # Inkdrop Release Notes
 
+## v4.6.0
+2020-03-10
+
+### New feature
+* Support unsetting a tag from multiple notes at once (Thanks [Halloleo](https://forum.inkdrop.app/t/how-to-rename-a-notebook-in-mac-app-and-more/1796/4))
+* Support YAML frontmatter (Experimental)
+
+### Improvement
+* Blur before hiding the main window (Thanks [Jasper](https://forum.inkdrop.app/t/application-toggle-main-window-on-windows-10/1745/4))
+* Support `selectFirstNote` option in the following commands:
+  - `core:note-list-show-all-notes`
+  - `core:note-list-show-notes-in-book`
+  - `core:note-list-show-notes-with-tag`
+  - `core:note-list-show-notes-with-status`
+* Show plugin version number in Preference window (Thanks [Sceptic](https://forum.inkdrop.app/t/plugin-version-display-and-auto-update/615))
+* Add "All Files" filter on import dialog (Thanks [Nicole](https://forum.inkdrop.app/t/markdown-file-types-for-importing/1771))
+* Update Electron to 7.1.13
+  - This should fix the bug where the app crashes when showing context menu
+    - [Crashes when right clicking note while syncing](https://forum.inkdrop.app/t/crashes-when-right-clicking-note-while-syncing/1058)
+    - [Cannot empty trash](https://forum.inkdrop.app/t/cannot-empty-trash/1757)
+* Window won't show when logged out
+* Handle anchor links in preview
+* Load CodeMirror language mode on demand
+* Highlight codeblocks in plugin readme
+
+### Bugfix
+* Some image attachments are not properly backed up
+* Insert " " between text token in note list view item (Thanks [Koike-san](https://forum.inkdrop.app/t/topic/1776))
+* (API) Babel configuration broken (Thanks [Prescott and Jasper](https://forum.inkdrop.app/t/plugin-dev-object-spread-operator-not-working-cannot-find-module-core-js-modules-web-dom-iterable/1766))
+  - Now it uses core-js@3 properly, so you don't need to add core-js@2 as your plugin dependency
+  - The recent Electron does support the most of ES6 features like Object Spread without using Babel
+* (API) Should respect isDismissable (Thanks Jasper)
+
 ## v4.5.2
 2020-01-30
 
