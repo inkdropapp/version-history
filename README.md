@@ -1,5 +1,22 @@
 # Inkdrop Release Notes
 
+## v4.6.1
+2020-03-20
+
+### New feature
+* Support highlighting active line (Thanks [Hiroaki-san](https://forum.inkdrop.app/t/highlight-line/1823))
+
+### Improvement
+* Highlight YAML frontmatter syntax
+  ![Highlight YAML](https://github.com/inkdropapp/version-history/blob/master/images/v4.6.1-highlight-yaml.png?raw=true)
+* Add text indent to align list items (Thanks Kento-san)
+  ![Align list items](https://github.com/inkdropapp/version-history/blob/master/images/v4.6.1-align-list-items.png?raw=true)
+
+### Bugfix
+* App crashes when showing error dialog (Thanks [Prescott](https://forum.inkdrop.app/t/app-crashes-when-showing-error-dialog/1819))
+* App crashes when showing settings of disabled plugin on Preferences
+* `Export as PDF` doesn't show error when failed
+
 ## v4.6.0
 2020-03-10
 
