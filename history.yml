@@ -1,9 +1,10 @@
 -
   version: 4.6.1
-  pub_date: 2020-03-20T00:00:00.000Z
+  pub_date: 2020-03-23T00:00:00.000Z
   notes: |
     ### New feature
     * Support highlighting active line (Thanks [Hiroaki-san](https://forum.inkdrop.app/t/highlight-line/1823))
+      ![Highlight YAML](https://github.com/inkdropapp/version-history/blob/master/images/v4.6.1-active-line.jpg?raw=true)
 
     ### Improvement
     * Highlight YAML frontmatter syntax
