@@ -8,7 +8,7 @@ try {
     version: version,
     name: 'Inkdrop',
     notes: versions
-      .slice(0, 10)
+      .slice(0, 1)
       .map(v => {
         return '## v' + v.version + '\n' + v.notes
       })
