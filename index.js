@@ -17,6 +17,11 @@ try {
       return lines
     })
     .join('\n')
+  md += '\n'
+  md += '* * *\n'
+  md +=
+    'The release notes for older versions can be found [here](https://github.com/inkdropapp/version-history/blob/master/README-old.md)\n'
+  md += '\n'
   fs.writeFileSync('./README.md', md)
 } catch (e) {
   console.error(e)
