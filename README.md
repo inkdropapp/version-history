@@ -1,5 +1,24 @@
 # Inkdrop Release Notes
 
+## v5.0.1
+2020-09-09
+
+### New feature
+* Add "Open notebook" context menu to notebook picker on editor (Thanks [Yamashita-san](https://forum.inkdrop.app/t/topic/2060))  
+  ![open notebook menu](https://github.com/inkdropapp/version-history/blob/master/images/v5.0.1_open-notebook-context-menu.png?raw=true)
+
+### Improvement
+* Add a command 'core:note-list-show-notes-in-book-of-editing-note'
+
+### Bugfix
+* HTTPS web proxy not working in some environments (Thanks [Shimizu-san](https://forum.inkdrop.app/t/v5/2050/15))
+* Blank search box shows no notes (Thanks [Dav](https://forum.inkdrop.app/t/version-5-very-buggy-on-ubuntu/2045))
+* 'shift-ctrl-o' for toggling numbered list not working (Thanks [Peilun](https://forum.inkdrop.app/t/key-bind-ctrl-shift-o-not-working/2057))
+* Parse YAML frontmatter only at the first line (Thanks [codeaporia](https://forum.inkdrop.app/t/thematic-breaks-issue/2059))
+* source-map-support not working, causing 'Failed to render Markdown' error (Thanks [Jonathan, Brad, and Dav](https://forum.inkdrop.app/t/failed-to-render-markdown-after-import-from-markdown/2039))
+* Some editor config values are not applied when changed (Thanks [Tahara-san](https://forum.inkdrop.app/t/topic/2036))
+* 'core:navigate-back'/'core:navigate-forward' commands should be bound with <kbd>alt-left</kbd>/<kbd>alt-right</kbd> for the convention of Windows and Linux (Thanks [Otawara-san](https://forum.inkdrop.app/t/windows-navigate-forward-navigate-back-os/2031))
+
 ## v5.0.0
 2020-09-01
 
