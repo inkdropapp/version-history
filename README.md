@@ -1,26 +1,34 @@
 # Inkdrop Release Notes
 
 ## v5.1.0
-2020-09-18
+2020-09-21
 
-### New feature
+### It remembers your work! 🤯
+Now it supports restoring the last navigation state on launching.
+It means that Inkdrop remembers which note you were editing, and sidebar and note list state, including search keywords.
+So, you can quickly resume your work even if you fell asleep in the middle of work :)
+  
+### Better note exportability
+When you wrote up a note, it should be able to be exported quickly. This update improves the note exportability so that you can work with other apps faster.
+
 * Support "Copy as HTML" and "Copy as Simple HTML" context menu to note list (Thanks [Joey](https://forum.inkdrop.app/t/can-you-add-copy-as-html-function/2083))  
   <img src="https://github.com/inkdropapp/version-history/blob/master/images/v5.1.0_copy-as-html.png?raw=true" style="width: 300px" />
 * Support exporting a notebook as Markdown or HTML from sidebar context menu  
   <img src="https://github.com/inkdropapp/version-history/blob/master/images/v5.1.0_export-notebook.png?raw=true" style="width: 300px" />
-
-### Improvement
-* Set status and tag based on current query context (Thanks [Shogo-san](https://forum.inkdrop.app/t/topic/2060))
-  * When you are selecting a tag or status, new note will have the tag/status automatically.
 * Support exporting multiple selected notes as Markdown (Thanks [Marco](https://forum.inkdrop.app/t/export-selected-notes-as-markdown/253/5?u=craftzdog))
 * Support batch export as pdf format
+* Support copying note with images as HTML from preview pane (Thanks [Mike](https://forum.inkdrop.app/t/copy-image-from-inkdrop-paste-into-another-app/1845))  
+  VIDEO🎬: [devlog: Fixing a bug of my Electron-based React app!](https://www.youtube.com/watch?v=jizO0wnKjIg)
+
+### Other improvements
+* Set status and tag based on current query context (Thanks [Shogo-san](https://forum.inkdrop.app/t/topic/2060))
+  * When you are selecting a tag or status, new note will have the tag/status automatically.
 * Remember workspace view state in navigation history
 * Defer showing app update notification when the app is in background (Thanks [Luís, Parker, Al, and Timo](https://forum.inkdrop.app/t/how-can-i-disable-the-update-popup/388))
   * It shows when the window is focused
 
 ### Bugfix
 * Pinned notes not listed at the top in tag and status groups (Thanks [Shimizu-san](https://forum.inkdrop.app/t/pin-to-top-not-working-with-tags-and-statuses/2078))
-* Support copying note with images as HTML from preview pane (Thanks [Mike](https://forum.inkdrop.app/t/copy-image-from-inkdrop-paste-into-another-app/1845))
 
 ## v5.0.1
 2020-09-09
