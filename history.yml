@@ -1,4 +1,14 @@
 -
+  version: 5.1.1
+  pub_date: 2020-09-24T00:00:00.000Z
+  notes: |
+    ### Improvements
+    * Add 'Insert image' toolbar button
+
+    ### Bugfixes
+    * Export a note as pdf not working (Thanks [Suzuki-san](https://forum.inkdrop.app/t/file-export-as-pdf/2089))
+    * Search query not cleared when restoring 'all notes' navigation state
+-
   version: 5.1.0
   pub_date: 2020-09-21T00:00:00.000Z
   notes: |

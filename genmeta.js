@@ -39,6 +39,7 @@ try {
   const data = yaml.safeDump(meta, { lineWidth: 1000 })
   fs.writeFileSync('./output/meta.yaml', data)
   fs.writeFileSync('./output/LATEST', 'v' + version)
+  fs.writeFileSync('./output/BETA', 'v' + version)
   console.log(
     `Successfully generated a meta file for version ${version} to ./meta.yaml`
   )

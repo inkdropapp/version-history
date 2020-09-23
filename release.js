@@ -15,3 +15,4 @@ function uploadFile(file, dest) {
 
 uploadFile('meta.yaml', packageUrl)
 uploadFile('LATEST', baseUrl)
+uploadFile('BETA', baseUrl)

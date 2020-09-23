@@ -1,5 +1,15 @@
 # Inkdrop Release Notes
 
+## v5.1.1
+2020-09-24
+
+### Improvements
+* Add 'Insert image' toolbar button
+
+### Bugfixes
+* Export a note as pdf not working (Thanks [Suzuki-san](https://forum.inkdrop.app/t/file-export-as-pdf/2089))
+* Search query not cleared when restoring 'all notes' navigation state
+
 ## v5.1.0
 2020-09-21
 
@@ -7,7 +17,7 @@
 Now it supports restoring the last navigation state on launching.
 It means that Inkdrop remembers which note you were editing, and sidebar and note list state, including search keywords.
 So, you can quickly resume your work even if you fell asleep in the middle of work :)
-  
+
 ### Better note exportability
 When you wrote up a note, it should be able to be exported quickly. This update improves the note exportability so that you can work with other apps faster.
 
