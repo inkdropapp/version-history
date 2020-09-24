@@ -2,8 +2,20 @@
   version: 5.1.1
   pub_date: 2020-09-24T00:00:00.000Z
   notes: |
-    ### Improvements
-    * Add 'Insert image' toolbar button
+    g'day. Automn is coming! 🍁
+
+    ### Faster restoration of navigation state
+    Quicker to resume your work!
+
+    ### Add 'Insert image' toolbar button
+    I don't remember why I didn't add it before, haha.  
+    ![Open link context menu](https://github.com/inkdropapp/version-history/blob/master/images/v5.1.1_insert-image.png?raw=true)
+
+    ### Good news for vimmers: 'Open Link' context menu for URL tokens in the editor
+    When you use it with vim plugin, double-clicking to open a link does not work as the event is handled by the plugin.
+    Allowing to open a link from the context menu would solve such issue.
+    Also we got 'Copy Link Address' menu as well.  
+    ![Open link context menu](https://github.com/inkdropapp/version-history/blob/master/images/v5.1.1_open-link-context-menu.png?raw=true)
 
     ### Bugfixes
     * Export a note as pdf not working (Thanks [Suzuki-san](https://forum.inkdrop.app/t/file-export-as-pdf/2089))
@@ -12,7 +24,7 @@
   version: 5.1.0
   pub_date: 2020-09-21T00:00:00.000Z
   notes: |
-    ### It remembers your work! 🤯
+    ### It remembers your work state! 🤯
     Now it supports restoring the last navigation state on launching.
     It means that Inkdrop remembers which note you were editing, and sidebar and note list state, including search keywords.
     So, you can quickly resume your work even if you fell asleep in the middle of work :)
