@@ -1,5 +1,30 @@
 # Inkdrop Release Notes
 
+## v5.1.2
+2020-11-02
+
+Helloooo
+
+### Improvements
+* Add 'Insert Image' toolbar button
+* Improve launch speed a little bit
+* Add "Open Link" context menu for URLs in editor
+* Add "Copy Link Address" context menu for URLs in editor
+  ![URL context menu](https://github.com/inkdropapp/version-history/blob/master/images/v5.1.2-url-context-menu.png?raw=true)
+* Show keyboard shortcuts for changing note status
+  ![URL context menu](https://github.com/inkdropapp/version-history/blob/master/images/v5.1.2-note-status-shortcuts.png?raw=true)
+
+### Bugfixes
+* Clear up search query when restoring 'All Notes' state
+* Empty areas appear when exporting as PDF (Thanks [Dscat](https://forum.inkdrop.app/t/topic/2120))
+* Force breaking all characters for long URLs in editor (Thanks [Jon](https://forum.inkdrop.app/t/multi-link-link-formatting/2100))
+* Incorrect YAML frontmatter detections (Thanks [Dscat](https://forum.inkdrop.app/t/pdf/2121))
+* Wrong title for imported md file with YAML frontmatter (Thanks [Federico](https://forum.inkdrop.app/t/wrong-title-for-imported-md-file-with-yaml-front-matter/2124))
+* Can't export when note list is hidden (Thanks [Dscat](https://forum.inkdrop.app/t/note-export-as-pdf/2127/3))
+* Hide pin header when searching with keyword
+* Some images are not shown in plugin readmes
+* Adding new notebooks with the sidebar has a non trivial hierarchy (Thanks [Athul](https://forum.inkdrop.app/t/adding-new-notebooks-with-the-sidebar-has-a-non-trivial-hierarchy/2187))
+
 ## v5.1.1
 2020-09-24
 
