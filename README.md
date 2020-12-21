@@ -1,5 +1,39 @@
 # Inkdrop Release Notes
 
+## v5.2.0
+2020-12-21
+
+Hello! Check out my vlog for this update :)  
+[![vlog](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.2.0-vlog.jpg?raw=true)](https://www.youtube.com/watch?v=zlrQScqhM90)
+
+### Search feature improvements
+* `title:` and `body:` search qualifier to filter notes by title or body (Thanks [Zhuolun](https://forum.inkdrop.app/t/how-to-search-notes-by-the-title/1849))
+  ![title qualifier](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.2.0-title-qualifier.png?raw=true)
+* Support changing order of search results (Thanks [Micah_Ledbetter](https://forum.inkdrop.app/t/search-results-are-not-sortable/2181))
+  ![Search result order](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.2.0-search-result-order.png?raw=true)
+
+### Importing & exporting feature improvements
+* Support importing images when importing from Markdown or HTML files
+* Support YAML frontmatter for Markdown export (Thanks [Robert](https://github.com/inkdropapp/inkdrop-export-utils/pull/3))
+
+### Workflow improvements
+* Support adding tags and status by drag-and-drop notes (Thanks [Jan](https://forum.inkdrop.app/t/feedback-working-with-tags/2225))  
+  ![DnD support](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.2.0-dnd-support.gif?raw=true)
+* Add "Remove Tag" context menu on note tag bar (Thanks [Jan](https://forum.inkdrop.app/t/feedback-working-with-tags/2225))
+* Support `inkdrop://` URL scheme on Windows (Thanks [Otawara-san](https://forum.inkdrop.app/t/windows-url/2232))
+  * Now the URL scheme works across macOS, Linux and Windows 🎉
+* Add some animations 🏃  
+  ![DnD support](https://github.com/inkdropapp/version-history-beta/blob/master/images/v5.2.0-animations.gif?raw=true)
+
+### Bugfixes
+* Allow smaller window size when distraction free mode (Thanks [Shota-san](https://forum.inkdrop.app/t/topic/2215))
+* Move a window into the primary screen if it was outside of screens (Thanks [Alexander](https://forum.inkdrop.app/t/windows-10-app-window-opens-outside-of-screen/869))
+* Fix word-break of shared page url on note sharing dialog
+* Hide workspace if notebook does not exist when restoring navigation state (Thanks [T_Crain](https://forum.inkdrop.app/t/notes-and-notebooks-not-syncing-on-mac/2214))
+* Fix placeholder bug in codemirror (Thanks [Akira-san](https://forum.inkdrop.app/t/just-start-typing-is-shown-when-deleting-unfixed-text-by-back-space-key/2221/6))
+* Exporting a note that includes `$'` causes an unexpected output when exporting as HTML or PDF (Thanks [Saito-san](https://forum.inkdrop.app/t/problem-to-export-pdf/2243))
+* BREAKING CHANGE: `inkdrop://note:***` URIs are no longer working on macOS Big Sur. Please replace them with `inkdrop://note/***`.
+
 ## v5.1.2
 2020-11-02
 
