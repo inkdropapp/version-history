@@ -1,4 +1,20 @@
 -
+  version: 5.2.1
+  pub_date: 2021-01-14T00:00:00.000Z
+  notes: |
+    Happy new year! 🙌
+
+    ### Improvement
+    * New app icon for macOS Big Sur 💅
+
+    ### Bugfixes
+    * Pasting an image from clipboard does not replace the selection (Thanks [avis](https://forum.inkdrop.app/t/cannot-overwrite-with-paste/2262))
+    * App sometimes won't load when the main window was out of screen in the previous session (Thanks [Ryan](https://forum.inkdrop.app/t/error-could-not-call-remote-method-setposition-check-that-the-method-signature-is-correct/2250))
+    * Cannot import Markdown files which don't have YAML frontmatters (Thanks [Ryan](https://forum.inkdrop.app/t/failed-to-import-markdown/2266))
+    * Extract repo URL from SSH URI properly on plugin pages (Thanks Ryan)
+    * `Ctrl-LClick` for multiple cursors is not working on Windows or Linux (Thanks [Nicolo](https://forum.inkdrop.app/t/keyboard-shortcuts-for-multiple-cursors-on-windows/2253))
+
+-
   version: 5.2.0
   pub_date: 2020-12-21T00:00:00.000Z
   notes: |
