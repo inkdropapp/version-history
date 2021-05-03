@@ -1,0 +1,16 @@
+--2021-05-03 14:13:29--  https://beta.docs.inkdrop.app/static/4b32d0c1b8e0d19482fe6a8c0e931330/70a18/integrating-with-alfred_screenshot.png
+Resolving beta.docs.inkdrop.app (beta.docs.inkdrop.app)... 2406:da18:880:3801:ace0:496f:12a:7ecb, 2406:da18:880:3802:371c:4bf1:923b:fc30, 52.220.244.242, ...
+Connecting to beta.docs.inkdrop.app (beta.docs.inkdrop.app)|2406:da18:880:3801:ace0:496f:12a:7ecb|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 291601 (285K) [image/png]
+Saving to: ‘integrating-with-alfred_screenshot.png’
+
+     0K .......... .......... .......... .......... .......... 17%  137K 2s
+    50K .......... .......... .......... .......... .......... 35%  264K 1s
+   100K .......... .......... .......... .......... .......... 52%  263K 1s
+   150K .......... .......... .......... .......... .......... 70%  666K 0s
+   200K .......... .......... .......... .......... .......... 87%  432K 0s
+   250K .......... .......... .......... ....                 100%  470K=1.0s
+
+2021-05-03 14:13:31 (282 KB/s) - ‘integrating-with-alfred_screenshot.png’ saved [291601/291601]
+
