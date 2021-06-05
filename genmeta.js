@@ -14,22 +14,54 @@ try {
       })
       .join('\n'),
     pub_date: new Date(),
-    files: {
-      darwin: {
-        archive: `Inkdrop-${version}-Mac.zip`
+    files: [
+      {
+        platform: 'darwin',
+        filetype: 'zip',
+        filename: `Inkdrop-${version}-x86_64-Mac.zip`,
+        arch: 'x86_64'
       },
-      win32: {
-        archive: `Inkdrop-${version}-Windows.zip`,
-        installer: 'Setup.exe',
-        nupkg: `inkdrop-${version}-full.nupkg`,
-        releases: 'RELEASES'
+      {
+        platform: 'darwin',
+        filetype: 'zip',
+        filename: `Inkdrop-${version}-arm64-Mac.zip`,
+        arch: 'arm64'
       },
-      linux: {
-        archive: `Inkdrop-${version}-Linux.zip`,
-        deb: `inkdrop_${version}_amd64.deb`,
-        rpm: `inkdrop-${version}-1.x86_64.rpm`
+      {
+        platform: 'windows',
+        filetype: 'zip',
+        filename: `Inkdrop-${version}-Windows.zip`,
+        arch: 'x86_64'
+      },
+      {
+        platform: 'windows',
+        filetype: 'installer',
+        filename: `Setup.exe`,
+        arch: 'x86_64',
+        additionalFiles: {
+          nupkg: `inkdrop-${version}-full.nupkg`,
+          releases: 'RELEASES'
+        }
+      },
+      {
+        platform: 'linux',
+        filetype: 'zip',
+        filename: `Inkdrop-${version}-Linux.zip`,
+        arch: 'x86_64'
+      },
+      {
+        platform: 'linux',
+        filetype: 'deb',
+        filename: `inkdrop_${version}_amd64.deb`,
+        arch: 'x86_64'
+      },
+      {
+        platform: 'linux',
+        filetype: 'rpm',
+        filename: `inkdrop-${version}-1.x86_64.rpm`,
+        arch: 'x86_64'
       }
-    }
+    ]
   }
 
   try {
