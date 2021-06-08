@@ -18,23 +18,23 @@ try {
       {
         platform: 'darwin',
         filetype: 'zip',
-        filename: `Inkdrop-${version}-x86_64-Mac.zip`,
-        arch: 'x86_64'
-      },
-      {
-        platform: 'darwin',
-        filetype: 'zip',
         filename: `Inkdrop-${version}-arm64-Mac.zip`,
         arch: 'arm64'
       },
       {
-        platform: 'windows',
+        platform: 'darwin',
+        filetype: 'zip',
+        filename: `Inkdrop-${version}-x86_64-Mac.zip`,
+        arch: 'x86_64'
+      },
+      {
+        platform: 'win32',
         filetype: 'zip',
         filename: `Inkdrop-${version}-Windows.zip`,
         arch: 'x86_64'
       },
       {
-        platform: 'windows',
+        platform: 'win32',
         filetype: 'installer',
         filename: `Setup.exe`,
         arch: 'x86_64',
