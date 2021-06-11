@@ -1,5 +1,26 @@
 # Inkdrop Release Notes
 
+## v5.3.1
+2021-06-11
+
+## Now it works on Apple Silicon (M1 chip)🎉
+
+It significantly improves the app performance on M1 Macs.
+Please download [the ARM64 build](https://my.inkdrop.app/download).
+
+Watch how fast it is on YouTube 👀
+
+[![Apple Silicon Support](https://github.com/inkdropapp/version-history/blob/master/images/v5.3.1-apple_silicon_support.jpg?raw=true)](https://www.youtube.com/watch?v=WMi5n3EMSIw)
+
+## A bunch of bugfixes
+
+* The app randomly hangs for a while when using Google Japanese Input on macOS (Thanks [Manabu](https://forum.inkdrop.app/t/topic/71/13))
+* Prevent inserting huge size images via API
+* Window title not updated properly when editing a note
+* Prevent calling arbitrary system calls via `iframe`
+* Remove `webview` immediately after finishing printing or exporting (Thanks [Nicole and Shimizu](https://forum.inkdrop.app/t/window-becomes-messed-up-when-exporting-to-pdf/2462))
+* The arrow buttons on sidebar shrink unexpectedly (Thanks [Magnus](https://forum.inkdrop.app/t/notebooks-different-fold-unfold-arrow-size/2479))
+
 ## v5.3.0
 2021-05-03
 
