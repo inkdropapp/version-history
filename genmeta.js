@@ -3,7 +3,7 @@ var yaml = require('js-yaml')
 var version = require('./package.json').version
 
 try {
-  const versions = yaml.safeLoad(fs.readFileSync('./history.yml', 'utf8'))
+  const versions = yaml.load(fs.readFileSync('./history.yml', 'utf8'))
   const meta = {
     version: version,
     name: 'Inkdrop',
@@ -68,7 +68,7 @@ try {
     fs.mkdirSync('./output')
   } catch (e) {}
 
-  const data = yaml.safeDump(meta, { lineWidth: 1000 })
+  const data = yaml.dump(meta, { lineWidth: 1000 })
   fs.writeFileSync('./output/meta.yaml', data)
   fs.writeFileSync('./output/LATEST', 'v' + version)
   fs.writeFileSync('./output/BETA', 'v' + version)

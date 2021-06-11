@@ -3,7 +3,7 @@ var yaml = require('js-yaml')
 var dateFormat = require('dateformat')
 
 try {
-  var versions = yaml.safeLoad(fs.readFileSync('./history.yml', 'utf8'))
+  var versions = yaml.load(fs.readFileSync('./history.yml', 'utf8'))
   var md = '# Inkdrop Release Notes\n'
   md += '\n'
   md += versions
