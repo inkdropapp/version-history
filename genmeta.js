@@ -24,20 +24,20 @@ try {
       {
         platform: 'darwin',
         filetype: 'zip',
-        filename: `Inkdrop-${version}-x86_64-Mac.zip`,
-        arch: 'x86_64'
+        filename: `Inkdrop-${version}-x64-Mac.zip`,
+        arch: 'x64'
       },
       {
         platform: 'win32',
         filetype: 'zip',
         filename: `Inkdrop-${version}-Windows.zip`,
-        arch: 'x86_64'
+        arch: 'x64'
       },
       {
         platform: 'win32',
         filetype: 'installer',
         filename: `Setup.exe`,
-        arch: 'x86_64',
+        arch: 'x64',
         additionalFiles: {
           nupkg: `inkdrop-${version}-full.nupkg`,
           releases: 'RELEASES'
@@ -47,19 +47,19 @@ try {
         platform: 'linux',
         filetype: 'zip',
         filename: `Inkdrop-${version}-Linux.zip`,
-        arch: 'x86_64'
+        arch: 'x64'
       },
       {
         platform: 'linux',
         filetype: 'deb',
         filename: `inkdrop_${version}_amd64.deb`,
-        arch: 'x86_64'
+        arch: 'x64'
       },
       {
         platform: 'linux',
         filetype: 'rpm',
         filename: `inkdrop-${version}-1.x86_64.rpm`,
-        arch: 'x86_64'
+        arch: 'x64'
       }
     ]
   }
