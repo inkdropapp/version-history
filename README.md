@@ -1,5 +1,35 @@
 # Inkdrop Release Notes
 
+## v5.4.0
+2021-09-02
+
+## Design updates for Windows and Linux!
+
+The default white title bar on Windows messes up the app clean design, especially with dark themes.
+In this release, you've got the new custom title bar with a frameless window. Please take a look at this:
+
+![Custom title bar on Windows](https://github.com/inkdropapp/version-history/blob/master/images/v5.4.0-default-dark.png?raw=true)
+
+By getting rid of the white strip bar, we can now have the acrylic translucent background on Windows, which looks stunning:
+
+![Vibrant dark UI demo](https://github.com/inkdropapp/version-history/blob/master/images/v5.4.0-vibrant-dark.png?raw=true)
+
+Try installing [vibrant-dark-ui theme](https://my.inkdrop.app/plugins/vibrant-dark-ui).
+
+## New feature
+
+* Tab size option (Thanks [Avis](https://forum.inkdrop.app/t/processing-pasted-tabs/2521))
+
+## Improvement
+
+* Code-sign the Windows installer
+
+## A bunch of bugfixes
+
+* Scroll past end should stop at the last line (Thanks [Nicole](https://forum.inkdrop.app/t/scrolling-past-the-end-of-a-note/2538))
+* The app crashes on quitting on Windows 8 (Thanks [Dmitriy](https://forum.inkdrop.app/t/inkdrop-crashes-on-quit-on-windows-8-1/2543))
+* Empty task list should have a height (Thanks [Magnus](https://forum.inkdrop.app/t/checkboxes-collide-with-following-line-in-preview/2541))
+
 ## v5.3.1
 2021-06-11
 
