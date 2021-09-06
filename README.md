@@ -1,5 +1,14 @@
 # Inkdrop Release Notes
 
+## v5.4.1
+2021-09-06
+
+## Bugfixes
+
+* Images with URL-encoded paths can't be imported from local files (Thanks [Nils](https://forum.inkdrop.app/t/importing-markdown-files-with-images-from-bear-not-working/2575))
+* Line numbers are broken (Thanks [Marconi, Tawara, and Ovct](https://forum.inkdrop.app/t/5-4-0-line-numbers-are-broken/2571))
+* Secondary windows stil have the default title bar on Windows (Thanks [Jon](https://forum.inkdrop.app/t/windows-ui-inconsistency-in-5-4/2572))
+
 ## v5.4.0
 2021-09-02
 
