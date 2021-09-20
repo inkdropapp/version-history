@@ -1,5 +1,17 @@
 # Inkdrop Release Notes
 
+## v5.4.2
+2021-09-20
+
+## Bugfixes
+
+* Incorrect IME composition window (Thanks [Otawara](https://forum.inkdrop.app/t/ime/2582))
+* The editor scrollbar `z-index` is higher than the editor drawer (Thanks [Otawara](https://forum.inkdrop.app/t/topic/2588))
+
+## Improvement
+
+* Update notification has been moved from a separate window to the bottom of the sidebar in order not to be distractive
+
 ## v5.4.1
 2021-09-06
 
