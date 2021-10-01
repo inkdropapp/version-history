@@ -1,4 +1,12 @@
 -
+  version: 5.4.3
+  pub_date: 2021-10-01T00:00:00.000Z
+  notes: |
+    ## Bugfix
+
+    * Can't login or sync (Thanks [guys](https://forum.inkdrop.app/t/lets-encrypt-root-certificate-expiration-error/2609))
+      * This is due to the let’s Encrypt root certificate expiration
+-
   version: 5.4.2
   pub_date: 2021-09-20T00:00:00.000Z
   notes: |
