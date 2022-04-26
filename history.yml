@@ -1,4 +1,31 @@
 -
+  version: 5.5.1
+  pub_date: 2022-04-26T00:00:00.000Z
+  notes: |
+    ## Bug fixes
+
+    - **Windows & Linux**: Cannot choose individual Markdown files on Windows or Linux when importing (Thanks [Wakate and Chanakan](https://forum.inkdrop.app/t/importing-files-bug-on-windows/2959)
+    - Specify `font-family` for the in-editor input dialog (Thanks [Otawara](https://forum.inkdrop.app/t/jump-to-line/2852))
+    - Align deeply indented lists (Thanks [Otawara](https://forum.inkdrop.app/t/topic/1777/13))
+    - Handle config load errors (Thanks [Takeshi](https://forum.inkdrop.app/t/inkdrop-crash-after-uninstalling-vim-plugin/2863))
+    - `<style>` tag in note is not working
+    - `title` attribute of `img` is not being properly rendered in preview
+      - eg. `![alt](path/to/img TITLE)`
+
+    ## Improvement
+
+    - Remember distraction free mode on next launch (Thanks [VGB, Ron, and Acekay](https://forum.inkdrop.app/t/remember-distraction-free-status-on-launch/2508)
+    - Better welcome guide for new users
+
+    ## Breaking changes
+
+    - **Windows**: Change shortcut keys for changing note status for Windows as they are not working (Thanks [Jakub](https://forum.inkdrop.app/t/status-shortcuts-and-drop-menu-issues/2857))
+      - <kbd>shift-alt-1</kbd>: `editor:change-note-status-none`
+      - <kbd>shift-alt-2</kbd>: `editor:change-note-status-active`
+      - <kbd>shift-alt-3</kbd>: `editor:change-note-status-onhold`
+      - <kbd>shift-alt-4</kbd>: `editor:change-note-status-completed`
+      - <kbd>shift-alt-5</kbd>: `editor:change-note-status-dropped`
+-
   version: 5.5.0
   pub_date: 2022-03-11T00:00:00.000Z
   notes: |
