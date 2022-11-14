@@ -1,5 +1,26 @@
--
-  version: 5.5.1
+- version: 5.5.2
+  pub_date: 2022-11-15T00:00:00.000Z
+  notes: |
+    ### Improvements
+    - **Dev**: Add a link to [dev-tools](https://my.inkdrop.app/plugins/dev-tools) plugin in Preferences
+    - **Editor**: Remove the file extension from the alt attribute when inserting an image from a file
+      - *Before*: `[filename.jpg](inkdrop://file:****)`
+      - *After*: `[filename](inkdrop://file:****)`
+    - **Theme**: Switch the default light/dark themes automatically based on the system preferences (Thanks [Mac and Ben](https://forum.inkdrop.app/t/make-inkdrop-follow-the-dark-light-mode-setting-on-macos-ios/1923/2))
+      - You can disable this behavior by setting `core.toggleDarkThemeAutomatically` to `false` in `config.cson`
+
+    ### Bugfixes
+    - **Export**: Inline styles not working in exported notes as pdf or html
+    - **Export**: Canceled dialogs not being handled properly
+    - **Export**: Do not exclude notes with empty body (Thanks [Magnus](https://forum.inkdrop.app/t/inconsistent-notes-count-on-export-all/3547))
+    - **UI**: The note list not updating if a conflict happens
+    - **Editor**: The editor should refresh after changing custom stylesheets
+    - **Editor**: The app crashes when inputting a title longer than 128 characters (Thanks [Danielsec](https://forum.inkdrop.app/t/note-title-longer-than-128-chars-results-in-crash/3071))
+    - **Markdown Preview**: Task checkboxes get wrong position when the item is empty
+    - **Local server**: The numeric parameters for `_changes` work incorrectly
+    - **Local server**: `GET /tag:<id>` not working
+    - **App**: Notes not being saved when immediately quitting after editing (Thanks [Ryuki](https://forum.inkdrop.app/t/edited-content-disappers-when-i-close-app-immediately-after-editing/3445))
+- version: 5.5.1
   pub_date: 2022-04-26T00:00:00.000Z
   notes: |
     ## Bug fixes
@@ -25,8 +46,7 @@
       - <kbd>shift-alt-3</kbd>: `editor:change-note-status-onhold`
       - <kbd>shift-alt-4</kbd>: `editor:change-note-status-completed`
       - <kbd>shift-alt-5</kbd>: `editor:change-note-status-dropped`
--
-  version: 5.5.0
+- version: 5.5.0
   pub_date: 2022-03-11T00:00:00.000Z
   notes: |
     ### New features
@@ -54,8 +74,7 @@
     ### Breaking changes
     * A syntax highlighting for GraphQL has been moved to a plugin: [lang-graphql](https://my.inkdrop.app/plugins/lang-graphql)
     * `require('electron').remote` is no longer available for plugins. Use `require('@electron/remote')` instead. [Learn more](https://github.com/electron/remote)
--
-  version: 5.4.3
+- version: 5.4.3
   pub_date: 2021-10-01T00:00:00.000Z
   notes: |
     ## Bugfix
@@ -63,20 +82,18 @@
     * Can't login or sync (Thanks [guys](https://forum.inkdrop.app/t/lets-encrypt-root-certificate-expiration-error/2609))
       * This is due to the let’s Encrypt root certificate expiration
     * **NOTE**: Auto update must be not working due to the issue above. Please manually [download the latest version here](https://my.inkdrop.app/download)
--
-  version: 5.4.2
+- version: 5.4.2
   pub_date: 2021-09-20T00:00:00.000Z
   notes: |
     ## Bugfixes
 
     * Incorrect IME composition window (Thanks [Otawara](https://forum.inkdrop.app/t/ime/2582))
     * The editor scrollbar `z-index` is higher than the editor drawer (Thanks [Otawara](https://forum.inkdrop.app/t/topic/2588))
-    
+
     ## Improvement
 
     * Update notification has been moved from a separate window to the bottom of the sidebar in order not to be distractive
--
-  version: 5.4.1
+- version: 5.4.1
   pub_date: 2021-09-06T00:00:00.000Z
   notes: |
     ## Bugfixes
@@ -84,8 +101,7 @@
     * Images with URL-encoded paths can't be imported from local files (Thanks [Nils](https://forum.inkdrop.app/t/importing-markdown-files-with-images-from-bear-not-working/2575))
     * Line numbers are broken (Thanks [Marconi, Tawara, and Ovct](https://forum.inkdrop.app/t/5-4-0-line-numbers-are-broken/2571))
     * Secondary windows stil have the default title bar on Windows (Thanks [Jon](https://forum.inkdrop.app/t/windows-ui-inconsistency-in-5-4/2572))
--
-  version: 5.4.0
+- version: 5.4.0
   pub_date: 2021-09-02T00:00:00.000Z
   notes: |
     ## Design updates for Windows and Linux!
@@ -102,7 +118,7 @@
     Try installing [vibrant-dark-ui theme](https://my.inkdrop.app/plugins/vibrant-dark-ui).
 
     ## New feature
-    
+
     * Tab size option (Thanks [Avis](https://forum.inkdrop.app/t/processing-pasted-tabs/2521))
 
     ## Improvement
@@ -114,8 +130,7 @@
     * Scroll past end should stop at the last line (Thanks [Nicole](https://forum.inkdrop.app/t/scrolling-past-the-end-of-a-note/2538))
     * The app crashes on quitting on Windows 8 (Thanks [Dmitriy](https://forum.inkdrop.app/t/inkdrop-crashes-on-quit-on-windows-8-1/2543))
     * Empty task list should have a height (Thanks [Magnus](https://forum.inkdrop.app/t/checkboxes-collide-with-following-line-in-preview/2541))
--
-  version: 5.3.1
+- version: 5.3.1
   pub_date: 2021-06-11T00:00:00.000Z
   notes: |
     ## Now it works on Apple Silicon (M1 chip)🎉
@@ -135,8 +150,7 @@
     * Prevent invoking arbitrary system calls via `iframe`
     * Remove `webview` immediately after finishing printing or exporting (Thanks [Nicole and Shimizu](https://forum.inkdrop.app/t/window-becomes-messed-up-when-exporting-to-pdf/2462))
     * The arrow buttons on sidebar shrink unexpectedly (Thanks [Magnus](https://forum.inkdrop.app/t/notebooks-different-fold-unfold-arrow-size/2479))
--
-  version: 5.3.0
+- version: 5.3.0
   pub_date: 2021-05-03T00:00:00.000Z
   notes: |
     You've got big updates that would significantly improve your workflow 💪
@@ -195,8 +209,7 @@
     * Disable horizontal scrollbars for printing with other syntax themes (Thanks [Gogdizzy](https://forum.inkdrop.app/t/horizontal-overflow-not-disabled-when-printing-with-a-third-party-preview-theme/2408))
     * Remove navigation keymaps like <kbd>cmd-k right</kbd> on macOS and <kbd>ctrl-k right</kbd> on Windows and Linux (Thanks [Shunichi](https://forum.inkdrop.app/t/how-can-i-disable-multi-keystroke-keybindings-completely/2390))
 
--
-  version: 5.2.1
+- version: 5.2.1
   pub_date: 2021-01-14T00:00:00.000Z
   notes: |
     Happy new year! 🙌
@@ -211,8 +224,7 @@
     * Extract repo URL from SSH URI properly on plugin pages (Thanks Ryan)
     * `Ctrl-LClick` for multiple cursors is not working on Windows or Linux (Thanks [Nicolo](https://forum.inkdrop.app/t/keyboard-shortcuts-for-multiple-cursors-on-windows/2253))
 
--
-  version: 5.2.0
+- version: 5.2.0
   pub_date: 2020-12-21T00:00:00.000Z
   notes: |
     Hello! Check out my vlog for this update :)  
@@ -246,8 +258,7 @@
     * Exporting a note that includes `$'` causes an unexpected output when exporting as HTML or PDF (Thanks [Saito-san](https://forum.inkdrop.app/t/problem-to-export-pdf/2243))
     * BREAKING CHANGE: `inkdrop://note:***` URIs are no longer working on macOS Big Sur. Please replace them with `inkdrop://note/***`.
 
--
-  version: 5.1.2
+- version: 5.1.2
   pub_date: 2020-11-02T00:00:00.000Z
   notes: |
     Helloooo
@@ -271,8 +282,7 @@
     * Hide pin header when searching with keyword
     * Some images are not shown in plugin readmes
     * Adding new notebooks with the sidebar has a non trivial hierarchy (Thanks [Athul](https://forum.inkdrop.app/t/adding-new-notebooks-with-the-sidebar-has-a-non-trivial-hierarchy/2187))
--
-  version: 5.1.1
+- version: 5.1.1
   pub_date: 2020-09-24T00:00:00.000Z
   notes: |
     g'day. Automn is coming! 🍁
@@ -293,8 +303,7 @@
     ### Bugfixes
     * Export a note as pdf not working (Thanks [Suzuki-san](https://forum.inkdrop.app/t/file-export-as-pdf/2089))
     * Search query not cleared when restoring 'all notes' navigation state
--
-  version: 5.1.0
+- version: 5.1.0
   pub_date: 2020-09-21T00:00:00.000Z
   notes: |
     ### It remembers your work state! 🤯
@@ -323,8 +332,7 @@
 
     ### Bugfix
     * Pinned notes not listed at the top in tag and status groups (Thanks [Shimizu-san](https://forum.inkdrop.app/t/pin-to-top-not-working-with-tags-and-statuses/2078))
--
-  version: 5.0.1
+- version: 5.0.1
   pub_date: 2020-09-09T00:00:00.000Z
   notes: |
     ### New feature
@@ -342,8 +350,7 @@
     * source-map-support not working, causing 'Failed to render Markdown' error (Thanks [Jonathan, Brad, and Dav](https://forum.inkdrop.app/t/failed-to-render-markdown-after-import-from-markdown/2039))
     * Some editor config values are not applied when changed (Thanks [Tahara-san](https://forum.inkdrop.app/t/topic/2036))
     * 'core:navigate-back'/'core:navigate-forward' commands should be bound with <kbd>alt-left</kbd>/<kbd>alt-right</kbd> for the convention of Windows and Linux (Thanks [Otawara-san](https://forum.inkdrop.app/t/windows-navigate-forward-navigate-back-os/2031))
--
-  version: 5.0.0
+- version: 5.0.0
   pub_date: 2020-09-01T00:00:00.000Z
   notes: |
     [![Thumbnail](https://site-cdn.inkdrop.app/email/2020-08-29_whats-new-in-v5-thumbnail.png)](https://blog.inkdrop.info/introducing-inkdrop-v5-5dee5873f953)
