@@ -1,5 +1,121 @@
 # Inkdrop Release Notes
 
+## v5.6.0
+2023-10-23
+
+## 💨 Faster launch speed
+
+Managed to make it 500-700ms faster 🚀
+
+Here is a demo:
+
+![file_Gs-9UL_8u|433x500](https://forum.inkdrop.app/uploads/default/original/2X/0/0c3f975cfc231e951ba923fc4d86c959cd116295.gif)
+
+**✍️ STORY**: [How I made Inkdrop 500ms faster to launch🚀](https://www.devas.life/how-i-made-inkdrop-500ms-faster-to-launch/)
+
+### Loading plugins lazily
+
+Along with v5.6.0, some plugins have been updated with performance improvements as well. [mermaid](https://my.inkdrop.app/plugins/mermaid) and [math](https://my.inkdrop.app/plugins/math) load their modules only when you open a note that uses one of them. It would keep the launch speed fast even if you installed plugins that require massive modules like them.
+
+## 🎨 Markdown renderer engine update
+
+v5.6.0 has upgraded Remark and Rehype packages to the latest versions. It isn't only an internal improvement but also gives you more possibilities to get useful features. It now has `mdast` and `hast` data in [the preview state](https://developers.inkdrop.app/states/preview), which allows to add syntax-aware features like outline views more easily without relying on regular expressions.
+
+**✍️ STORY**: [Refactoring the extensible Markdown renderer 🛠️](https://www.devas.life/refactoring-the-extensible-markdown-renderer/)
+
+On the other hand, it may cause some plugins not working due to the breaking changes. For plugin developers, I'll post another topic to help you update your plugins.
+
+## 🌈 Built-in paste-as-markdown support
+
+Plugins are useful but it'd be a burden to explore and decide which plugins to install for light users. I wanted to make the app just work out of the box. As a starter, `paste-as-markdown` is now bundled into the app by default. It allows you to paste HTML as Markdown from the clipboard. It'd be useful for copy-and-pasting formatted texts from browsers.
+
+I'm planning to bundle **Mermaid**, **GitHub Emoji**, and **Math** plugins as well.
+
+## 😵 Acrylic window style is not working on Windows
+
+* https://forum.inkdrop.app/t/lag-when-resizing-the-window-with-acrylic-background/4011
+
+On Electron@25.1.1, the module that the app used to support the acrylic window style no longer works, unfortunately. The good news is that Electron itself officially supports the acrylic style for Windows:
+
+* [feat: support Mica/Acrylic on Windows by codebytere · Pull Request #38163 · electron/electron · GitHub](https://github.com/electron/electron/pull/38163)
+
+The bad news is that it is not stable and working as expected – It doesn't work with frameless windows, besides, it becomes unresizable and loses shadows. So, unfortunately, the acrylic window style is not supported on Windows in this release.
+
+## ✨ Nested workspace views
+In previous versions, pressing the "Detail" button on the notebook would take you to the workspace view, but you couldn't press the "Detail" button again once you were in that view.
+In this update, the "Detail" button is now functional within the workspace view as well!
+
+![nested workspace view](https://forum.inkdrop.app/uploads/default/original/2X/7/70deb1d54021785330b8ff881f949ac253e9c37a.jpeg)
+
+The sidebar now displays the path of the current and parent notebooks:
+
+![nested workspace view 2](https://forum.inkdrop.app/uploads/default/original/2X/b/b4d01ce272032530449d11aa068cd52c488f928b.jpeg)
+
+## Quick notebook picker for moving notes
+
+You can more quickly choose a notebook :D
+
+![notebook picker improved](https://forum.inkdrop.app/uploads/default/original/2X/c/cb7323cd2469b5edaa8ce1e859a9f699ee6be4f2.jpeg)
+
+
+## ✨ New API documentation (WIP)
+
+![Screenshot 2023-08-29 at 15.01.06|690x439](https://forum.inkdrop.app/uploads/default/optimized/2X/1/17f34dadcd6918de386222e143eeb1fea9adea5c_2_1380x878.jpeg)
+
+
+I've been working on redesigning the documentation and the new API documentation is now available as WIP.
+
+https://developers.inkdrop.app/
+
+The design is heavily inspired by Stripe, built on top of Tailwind UI. It supports full-text search now. There are still many missing pages and broken links though, your help to improve the doc would be greatly appreciated. It will be more comprehensive and easy to understand and I hope you like it :D
+
+I'll be working on creating a new user manual as well!
+
+## Other bug fixes and improvements
+
+* **improvement(note-list)**: The sidebar now has the "Pinned Notes" section. In "All Notes", pinned notes are no longer displayed on top of the note list.
+* https://forum.inkdrop.app/t/copy-paste-bullet-point-from-the-web-unexpected-behaviour/4043
+* https://forum.inkdrop.app/t/memory-consumption-is-very-high/2583/15
+* [Images are converted into PNG when inserting from the toolbar button](https://forum.inkdrop.app/t/images-are-converted-into-png-when-inserting-from-the-toolbar-button/3967)
+* **fix(export)**: Some image files do not have file extensions
+* **fix(security)**: Show a confirmation alert when clicking non-https links on the preview (CVE-2023-44141)
+
+- Can't change tag colors (Thanks [Lukas](https://forum.inkdrop.app/t/changing-the-color-of-a-tag-fails/4107))
+- Defer updating the preview a bit longer when the preview is not visible (Thanks [Seito](https://forum.inkdrop.app/t/keystrokes-are-slow-in-the-beta-version/4122/5))
+- When exporting, use `Untitled` if the note title is empty
+- Different modules like `react` get loaded from an incorrect path, which causes the app to crash (Thanks [Jaime](https://forum.inkdrop.app/t/math-plugin-not-working-nor-found/4130))
+- The cursor jumps to a wrong position when toggling the side-by-side mode
+- The app crashes when uninstalling a plugin from Preferences (Thanks [Lukas](https://forum.inkdrop.app/t/inkdrop-crashes-when-i-uninstall-a-plugin/4141/))
+- The note counts are not updated correctly in the workspace views (Thanks [SDO](https://forum.inkdrop.app/t/status-not-updating-for-subnotebook-notes-in-focused-notebook/4151))
+- `open()` does not open the url in a browser but opens it in an internal browser window instead (Thanks [Shimizu](https://forum.inkdrop.app/t/v5-6-how-to-use-an-external-browser-with-the-open-method/4145))
+- Sidebar display all notes after toggling off a distraction free (Thanks [Bundit](https://forum.inkdrop.app/t/sidebar-display-all-notes-after-toggling-off-a-distraction-free/4111))
+- Export does not include notes with completed or dropped status (Thanks @Lukas [Issue](https://github.com/inkdropapp/inkdrop-export-as-markdown/issues/6))
+
+* fix(preview): number of task list items not updated correctly (Thanks [Lukas](https://forum.inkdrop.app/t/task-list-is-not-updated-when-saving-notes/4163))
+* fix(html): do not load `browser-commons.js` (Thanks [Lukas](https://forum.inkdrop.app/t/unexpected-error-message-in-the-console/4170/2))
+* fix(share): The app crashes when sharing a note (Thanks [Martin](https://forum.inkdrop.app/t/black-window-on-sharing-in-5-6-0-beta-1/4174))
+* fix(preferences): Add a note on the acrylic background effect on Windows
+* fix(login): The login screen is broken
+
+- fix(server): Local HTTP server not working (Thanks [Raivis](https://forum.inkdrop.app/t/impossible-to-connect-live-export/4147/9))
+- fix(editor): floating action buttons not appearing right after the launch (Thanks [Lukas](https://forum.inkdrop.app/t/the-editors-floating-actions-are-not-directly-visible/4187))
+- fix(ipm): The CLI command `ipm install` not working (Thanks [Raivis](https://forum.inkdrop.app/t/impossible-to-connect-live-export/4147/8))
+
+## Special thanks
+
+I'd like to mention a few guys who helped me fix bugs and make the app stable.
+
+- @Lukas
+- @Raivis
+- @Seito_Tanaka
+- @Jaime_Armando_Perez
+- @SDO
+- @shimizu_tatsuya
+- @Bundit_Jianpinitnan
+- @Martin_Hlozek
+
+Thank you so much for your support as always ❤️
+
 ## v5.5.3
 2022-12-14
 
