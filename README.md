@@ -1,5 +1,19 @@
 # Inkdrop Release Notes
 
+## v5.6.2
+2023-11-21
+
+## Bugfixes
+- fix(note-list): The popup menu for opening notebook not working (Thanks [Shogo-san](https://forum.inkdrop.app/t/v5-6-0-open-notebook/4215))
+- fix(keymap): Canceling multi-stroke keymaps not working (Thanks [Markus](https://forum.inkdrop.app/t/keymap-json-keybindings-mess-up-custom-keymaps/4220))
+- fix(editor): "Move to notebook" not working properly, where it randomly moves a previously opened note (Thanks [Shimizu-san](https://forum.inkdrop.app/t/issue-with-changing-notebooks-in-inkdrop-5-6/4243))
+- fix(editor): Do not transform HTML into Markdown when pasting if it has special markups (Thanks [Jake and Lukas](https://forum.inkdrop.app/t/copy-paste-can-introduce-foriegn-charachters/4249))
+- fix(fts): Forward matching not working in the full-text search (Thanks [Thomas](https://forum.inkdrop.app/t/fts-prefix-queries-not-working/4259)) and [SDO](https://forum.inkdrop.app/t/search-is-worse-with-v5-6-0/4230)
+
+## Improvement
+- fix(windows&linux): Change a keymap to delete a note from `ctrl-backspace` to `delete`
+- chore(electron): Bump up to 25.9.5
+
 ## v5.6.0
 2023-10-23
 
