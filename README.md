@@ -382,6 +382,8 @@ Happy new year! 🙌
 * Extract repo URL from SSH URI properly on plugin pages (Thanks Ryan)
 * `Ct
 
+
 * * *
+
 The release notes for older versions can be found [here](https://github.com/inkdropapp/version-history/blob/master/README-old.md)
 
