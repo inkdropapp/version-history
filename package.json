@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "inkdrop-version-history",
-  "version": "5.7.0",
+  "version": "5.8.0",
   "description": "The version history of Inkdrop for desktop",
   "main": "index.js",
   "repository": {
