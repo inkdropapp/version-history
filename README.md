@@ -1,5 +1,130 @@
 # Inkdrop Release Notes
 
+## v5.8.1
+2024-05-01
+
+[![2024-04-30_Inkdrop Desktop v5.8.1_thumb-play](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:lvcTjfVLb/index-public)](https://youtu.be/pVLpsaJzG1U)
+
+## Bug fixes
+
+### 😓 The 'Readable line length' option has been disabled by default
+
+The 'Readable line length' option was introduced on [v5.8.0](https://forum.inkdrop.app/t/inkdrop-desktop-v5-8-0/4511#new-option-readable-line-lengths-15). But, this option made the existing users so confused as they reported on the forum ([1](https://forum.inkdrop.app/t/weird-padding-after-the-update-5-8-0/4514), [2](https://forum.inkdrop.app/t/note-taking-view-seems-broken/4568/2), [3](https://forum.inkdrop.app/t/the-page-editor-rendering-is-not-resizing/4551), [4](https://forum.inkdrop.app/t/the-editor-view-is-not-stretched-to-the-left/4516), [5](https://forum.inkdrop.app/t/blank-space-appears-on-the-editor-screen/4512)). Then, [Shimizu-san suggested](https://forum.inkdrop.app/t/readable-line-length-option-is-not-accepted/4569) that it'd be nice not to enable this option by default and I agreed.
+
+I learned that, even if it's a popular feature on other note apps, changing the default behavior would make the existing users confused. I'll be more careful when changing the default behavior next time.
+
+Sorry for the confusion!
+
+### 🎨 \[Theming\] Embed the default preview theme in the app
+
+In v5.8.1, the app would solve the following issue by embedding the default preview theme:
+
+- GFM Alerts not working on community preview themes (Thanks [Kentaro and taichi](https://forum.inkdrop.app/t/there-might-be-a-bug-in-rendering-alerts/4529)
+
+The problem is that themes have to provide every style, which requires to update when the app gets a new feature with a stylesheet. Since we can't expect every theme developer to sustainably and quickly update their themes, it'd be nice to have the default styles instead of requiring the themes to include every style. So, from this version, themes basically 'override' the default theme.
+
+https://github.com/inkdropapp/inkdrop-github-preview-theme
+
+The default preview theme `github-preview` now doesn't apply any styles. If you create a new preview theme, you only have to add styles for customizations.
+
+This way, the existing preview themes can continue working without updating, like GFM Alerts.
+
+In the future, I'll make the same change to the UI themes.
+
+### Other bugfixes
+
+- Wrong icon in 'Apps and Features' list on Windows (Thanks [Dmitry](https://forum.inkdrop.app/t/default-electron-icon-in-apps-and-features-list/4548))
+- Scroll positions get reset when changing the layout (Thanks [Ivan](https://forum.inkdrop.app/t/keep-the-edit-location-when-toggle-side-bar/4545))
+- Random crashes when quitting Inkdrop on Windows (Thanks [Patrick](https://forum.inkdrop.app/t/error-on-closing-inkdrop-on-win-11/4561))
+- The 'Create' button does nothing on the Paste URL as Link dialog (Thanks [Patrick](https://forum.inkdrop.app/t/paste-of-url-does-nothing-on-hitting-create/4559))
+- Duplicate menu items in the Trash notebook (Thanks [Dmitry](https://forum.inkdrop.app/t/duplicate-items-in-the-context-menu/3599/5?u=craftzdog))
+- dev-tools: Copy tag id from sidebar throws an error (Thanks [Lukas](https://forum.inkdrop.app/t/plugin-dev-tools-copy-tag-id-from-sidebar-throws-an-error/4570))
+
+## Improvements
+
+### 🎨 Update the GitHub preview theme to match the latest GitHub styles
+
+The default preview theme was outdated, so it has been updated based on [this reopsitory](https://github.com/sindresorhus/github-markdown-css). This also fixes the task list identation issue (Thanks [Dmitry](https://forum.inkdrop.app/t/no-text-indentation-in-checklist-preview/4536)).
+
+### 🎨 Apply the syntax theme to codeblocks in the Markdown preview (Needs update)
+
+While working on simplifying theming the Markdown preview styles mentioned above, I thought it'd be nice to support applying the current syntax theme to the codeblocks in the preview pane automatically. It allows you to avoid making another preview theme just for changing the codeblock syntax highlighting styles.
+
+For example: Solarized Dark
+
+[![Solarized Dark](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:-9cyFnTmz/index-public)](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:-9cyFnTmz/index-public)
+
+Solarized Light:
+
+[![Solarized Light](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:1Weo0dhfD/index-public)](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:1Weo0dhfD/index-public)
+
+#### How to make your syntax theme support it
+
+The Markdown renderer now adds a class name `.codeblock` to the enclosing `div` elements of the codeblocks. So, it is easy to add styles to them just by adding a CSS selector `.mde-preview .codeblock pre` to your stylesheet like so:
+
+```
+diff --git a/styles/index.css b/styles/index.css
+index 14ae539..3f6bcbb 100644
+--- a/styles/index.css
++++ b/styles/index.css
+@@ -26,7 +26,8 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
+   --base-magenta: #d33682;
+
+   /* Color scheme for code-mirror */
+-  .CodeMirror {
++  .CodeMirror,
++  .mde-preview .codeblock pre {
+     color-scheme: dark;
+
+     color: var(--base05);
+     .cm-header {
+       color: var(--base-yellow);
+     }
+```
+
+Check out [Solarized Dark Syntax](https://github.com/inkdropapp/inkdrop-solarized-dark-syntax-theme) for more detail.
+
+### ⚙️ Better Preferences UI
+
+The setting items have been organized and it has got much easier to find and change settings.
+
+[![Better setting UIs](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:2HqnvlOPy/index-public)](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:2HqnvlOPy/index-public)
+
+And the Plugins page has got a filter input:
+
+[![Filter installed plugins with keyword](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:ksYfsq6pr/index-public)](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:ksYfsq6pr/index-public)
+
+### ⚙️ New editor option: "Paste URL as link"
+
+The "Paste URL as link" feature sends a request to the remote server when pasting a URL, which would be an unwanted behavior for some people (Thanks [Ryota](https://forum.inkdrop.app/t/how-disable-auto-link-title/4558)). Now, you can disable it via:
+
+- **Preferences** -> **Editing** -> **Markdown** -> **Paste URL as link**
+
+[![Preferences](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:7bFuyciCn/index-public)](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:7bFuyciCn/index-public)
+
+### 🔗 Avoid triggering 'Paste URL as link' when the cursor is in the middle of the link
+
+For example, when you type `[link title](|` (`|` is the cursor position) and hit <kbd>Cmd/Ctrl-V</kbd>, it shouldn't trigger the paste-as-link dialog.
+
+## Internal changes
+
+### Adopting Cascade Layers
+
+I've made a lot of changes in theming mentioned above. To accomplish that, it now adopts [Cascade layers](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_layers). It would make theming much simpler. They allow themes to avoid rule specificity issues. Inkdrop will bundle more default styles in the future versions, and with cascade layers, custom themes will only need to override the default styles rather than including every style.
+
+UI, syntax, and preview themes are automatically enclosed with the corresponding cascade layer in v5.8.1. The order of precedence is defined as the following at the moment:
+
+```
+@layer reset, base, tokens, theme, theme.ui, theme.preview, theme.syntax;
+```
+
+- `reset`: Reset styles
+- `base`: The app base styles
+- `tokens`: CSS common variables
+- `theme.ui`: UI theme
+- `theme.preview`: Preview theme
+- `theme.syntax`: Syntax theme
+
 ## v5.8.0
 2024-04-03
 
