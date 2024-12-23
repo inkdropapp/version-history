@@ -1,5 +1,13 @@
 # Inkdrop Release Notes
 
+## v5.9.2
+2024-12-23
+
+## Bugfix
+
+- fix(syntax): remove text color highlightings from the base syntax styles
+  - It was a regression from the bugfix for [this issue](https://forum.inkdrop.app/t/v5-9-0-strikethrough-text-not-formatted/5076/5).
+
 ## v5.9.1
 2024-12-23
 
