@@ -1,5 +1,13 @@
 # Inkdrop Release Notes
 
+## v5.9.3
+2025-01-21
+
+## Bugfix
+
+- fix(preferences): The app randomly infinitely fetches plugin information
+- fix(mde): The command `core:toggle-inline-code` prevents typing backticks on Italian keyboards (Thanks [@Alessandro_Baldoni](https://forum.inkdrop.app/t/v5-9-2-problem-with-backtick-on-macos/5107))
+
 ## v5.9.2
 2024-12-23
 
