@@ -3,6 +3,8 @@
 ## v5.10.0
 2025-02-21
 
+[![Screenshot 2025-02-21 at 14.21.02](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:gu-n80Uq/index-public)](https://youtu.be/LPBmpTkTlVM)
+
 ## Revision history view just got better
 
 Inkdrop keeps a history of changes made in your notes locally. Whenever you save the current version, Inkdrop automatically creates a new 'revision'. This is useful when you want to restore a previous revision.
@@ -27,6 +29,8 @@ Click the three-dot button on the right side of each revision to open a popup me
 ![Screenshot 2025-02-21 at 10.58.31](https://uploads.inkdrop.app/attachments/user-d975606d93c067c5ef8d6adfb5db83b5/file:EQ6m5QO9/index-public)
 
 Enjoy viewing your tech note chronicle!
+
+- Learn more: [Restore previous revisions of note - Inkdrop User Manual](https://docs.inkdrop.app/reference/revision-history)
 
 The note tags input bar now smoothly animates when adding or removing tags, making the experience slightly more satisfying :)
 
