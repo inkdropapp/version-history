@@ -1,5 +1,12 @@
 # Inkdrop Release Notes
 
+## v5.11.1
+2025-04-04
+
+## Bug fix
+
+- Cannot export as Markdown (Thanks [Yukio and kyon](https://forum.inkdrop.app/t/markdown-export/5201))
+
 ## v5.11.0
 2025-03-19
 
