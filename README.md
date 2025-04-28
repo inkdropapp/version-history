@@ -1,5 +1,13 @@
 # Inkdrop Release Notes
 
+## v5.11.3
+2025-04-25
+
+## Bugfixes
+
+- Copying an image to clipboard not working (Thanks [Shimizu-san](https://forum.inkdrop.app/t/copy-image-from-right-click-menu-doesn-t-work-5-11-2/5232/2))
+- Cannot change the default notebook on the preferences
+
 ## v5.11.2
 2025-04-14
 
