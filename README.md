@@ -1,5 +1,20 @@
 # Inkdrop Release Notes
 
+## v5.11.4
+2025-05-13
+
+# Improvement
+
+- Automatically convert tab indentations into spaces when pasting multiline text
+  - Thanks [@J_N](https://forum.inkdrop.app/t/processing-pasted-tabs/2521/13)
+
+## Bugfixes
+
+- The editing note is not being saved immediately on blur
+  - Thanks [@Ryuki_Yokoo](https://forum.inkdrop.app/t/when-i-open-a-note-separately-two-notes-dont-sync/5249)
+- Unable to move notebooks from the sidebar menu
+  - Thanks [@Sumon_Chattopadhyay](https://forum.inkdrop.app/t/unable-to-move-notebooks-from-the-sidebar-menu/5253/2)
+
 ## v5.11.3
 2025-04-25
 
