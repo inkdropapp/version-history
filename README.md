@@ -1,5 +1,14 @@
 # Inkdrop Release Notes
 
+## v5.11.7
+2025-12-15
+
+## Bugfixes
+
+- fix(app): cannot create new note in the new window (Thanks [@David_Tefft](https://forum.inkdrop.app/t/application-quick-note-opening-an-existing-note/5444)
+- fix(access-key-store): ignore old keychain access exceptions
+- fix(protocol-handler): fonts for math are not properly loaded
+
 ## v5.11.6
 2025-07-23
 
