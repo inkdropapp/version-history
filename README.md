@@ -1,5 +1,12 @@
 # Inkdrop Release Notes
 
+## v5.11.8
+2026-02-03
+
+## Bump up Electron to 39.4.0
+
+From 31.7.7.
+
 ## v5.11.7
 2025-12-15
 
