@@ -1,5 +1,19 @@
 # Inkdrop Release Notes
 
+## v5.11.10
+2026-08-04
+
+## Preparing for v6 upgrade
+
+It will display a notification dialog when v6 is available.
+
+## v5.11.9
+2026-06-20
+
+## Security update
+
+It now requires Turnstile when logging in.
+
 ## v5.11.8
 2026-02-03
 
